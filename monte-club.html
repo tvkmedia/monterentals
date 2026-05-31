@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Monte Club — MontenegroDrive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "secondary-container":"#d3e2ed","on-secondary":"#ffffff","inverse-on-surface":"#eff1f3",
+        "surface-variant":"#e0e3e5","background":"#f7f9fb","surface-tint":"#455f87",
+        "on-surface-variant":"#43474e","secondary-fixed":"#d6e5ef","primary-fixed-dim":"#adc8f5",
+        "surface-container-low":"#f2f4f6","surface-dim":"#d8dadc","on-tertiary-fixed":"#2e1500",
+        "on-primary-fixed":"#001b3b","on-error":"#ffffff","on-tertiary":"#ffffff",
+        "on-tertiary-fixed-variant":"#663d16","on-primary-container":"#7b95c0",
+        "on-secondary-fixed":"#0f1d25","tertiary-container":"#472400","error":"#ba1a1a",
+        "surface":"#f7f9fb","on-primary-fixed-variant":"#2d476e","outline-variant":"#c4c6cf",
+        "on-surface":"#191c1e","outline":"#74777f","surface-container":"#eceef0",
+        "surface-bright":"#f7f9fb","on-background":"#191c1e","tertiary":"#291300",
+        "primary-fixed":"#d5e3ff","inverse-primary":"#adc8f5","on-tertiary-container":"#bf895b",
+        "on-secondary-container":"#56656e","surface-container-highest":"#e0e3e5",
+        "surface-container-high":"#e6e8ea","secondary":"#526069","secondary-fixed-dim":"#bac9d3",
+        "on-error-container":"#93000a","tertiary-fixed-dim":"#f6ba88","tertiary-fixed":"#ffdcc1",
+        "primary":"#001835","inverse-surface":"#2d3133","on-primary":"#ffffff",
+        "error-container":"#ffdad6","primary-container":"#0f2d52",
+        "surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#3b4951",
+        "brand-accent":"#FF5722"
+      },
+      borderRadius: { DEFAULT:"0.25rem", lg:"0.5rem", xl:"0.75rem", "2xl":"1rem", "3xl":"1.5rem", full:"9999px" },
+      spacing: {
+        "gutter":"24px","margin-mobile":"16px","stack-sm":"8px","stack-lg":"32px",
+        "container-max":"1280px","stack-md":"16px","section-padding":"80px"
+      },
+      fontFamily: {
+        "body-md":["Inter"],"body-sm":["Inter"],"label-bold":["Inter"],
+        "h2":["Plus Jakarta Sans"],"body-lg":["Inter"],"h3":["Plus Jakarta Sans"],
+        "h1":["Plus Jakarta Sans"],"price-display":["Plus Jakarta Sans"]
+      },
+      fontSize: {
+        "body-md":["16px",{ lineHeight:"1.5", fontWeight:"400" }],
+        "body-sm":["14px",{ lineHeight:"1.5", fontWeight:"400" }],
+        "label-bold":["14px",{ lineHeight:"1.2", fontWeight:"600" }],
+        "h2":["32px",{ lineHeight:"1.3", fontWeight:"700" }],
+        "body-lg":["18px",{ lineHeight:"1.6", fontWeight:"400" }],
+        "h3":["24px",{ lineHeight:"1.4", fontWeight:"600" }],
+        "h1":["48px",{ lineHeight:"1.2", letterSpacing:"-0.02em", fontWeight:"700" }],
+        "price-display":["28px",{ lineHeight:"1", letterSpacing:"-0.01em", fontWeight:"700" }]
+      }
+    }
+  }
+};
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+.shadow-ambient { box-shadow: 0 4px 20px rgba(15, 45, 82, 0.08); }
+</style>
+<!-- BEGIN SEO -->
+<meta name="description" content="List your unused car with MontenegroDrive. We handle bookings, cleaning, insurance and customers. Indicative €450–950/month per economy car."/>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"/>
+<meta name="theme-color" content="#001835"/>
+<link rel="canonical" href="https://montenegrodrive.com/monte-club/"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="MontenegroDrive"/>
+<meta property="og:title" content="Monte Club — Earn Money With Your Idle Car"/>
+<meta property="og:description" content="List your unused car with MontenegroDrive. We handle bookings, cleaning, insurance and customers. Indicative €450–950/month per economy car."/>
+<meta property="og:url" content="https://montenegrodrive.com/monte-club/"/>
+<meta property="og:image" content="https://montenegrodrive.com/screenshot.png"/>
+<meta property="og:locale" content="en_US"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Monte Club — Earn Money With Your Idle Car"/>
+<meta name="twitter:description" content="List your unused car with MontenegroDrive. We handle bookings, cleaning, insurance and customers. Indicative €450–950/month per economy car."/>
+<meta name="twitter:image" content="https://montenegrodrive.com/screenshot.png"/>
+
+<!-- Favicon (SVG with raster fallback) -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon.svg"/>
+<link rel="mask-icon" href="favicon.svg" color="#001835"/>
+<!-- END SEO -->
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface shadow-sm">
+  <div class="max-w-container-max mx-auto flex justify-between items-center px-gutter py-4">
+    <div class="flex items-center gap-10">
+      <a href="index.html" class="flex items-center gap-3 group" aria-label="MontenegroDrive — Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" class="w-10 h-10 flex-shrink-0 transition-transform group-hover:scale-105" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#001835"/>
+          <text x="20" y="29" font-family="'Plus Jakarta Sans', system-ui, sans-serif"
+                font-size="26" font-weight="800" text-anchor="middle" fill="#FF5722">M</text>
+        </svg>
+        <span class="font-h2 text-h2 font-bold text-primary leading-none">MontenegroDrive</span>
+      </a>
+      <nav class="hidden md:flex gap-6">
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="search.html">Fleet</a>
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="travel-guide.html">Travel Guide</a>
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="search.html">Rentals</a>
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="locations.html">Locations</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4">
+      <a class="hidden md:block text-secondary font-label-bold hover:text-primary transition-colors" href="support.html">Support</a>
+      <a class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-bold hover:shadow-lg transition-all" href="manage-booking.html">Manage Booking</a>
+    </div>
+  </div>
+</header>
+<main class="pt-[72px]">
+
+<section class="relative h-[460px] flex items-center overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img class="w-full h-full object-cover" alt="" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2000&auto=format&fit=crop"/>
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/50 to-primary/30"></div>
+  </div>
+  <div class="relative z-10 max-w-container-max mx-auto px-gutter w-full">
+    <div class="max-w-3xl">
+      <span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-bold mb-stack-md">Monte Club · Partner programme</span>
+      <h1 class="font-h1 text-h1 text-white mb-stack-md drop-shadow-md">Earn money with your idle car</h1>
+      <p class="font-body-lg text-body-lg text-white/90 leading-relaxed">Monte Club is MontenegroDrive's partner programme. Do you have a car that you don't use? List it with us, we handle the customers, insurance, cleaning and maintenance — you collect a monthly payout.</p>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="py-section-padding px-gutter">
+  <div class="max-w-container-max mx-auto">
+    <div class="text-center mb-stack-lg">
+      <h2 class="font-h2 text-h2 text-primary mb-stack-sm">How it works</h2>
+      <p class="text-secondary font-body-md max-w-xl mx-auto">Three steps, two visits to our office, and your car starts paying for itself.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl p-8 shadow-ambient border border-outline-variant/30 relative">
+        <div class="absolute -top-5 -left-5 w-12 h-12 rounded-full bg-[#FF5722] text-white font-h3 text-h3 flex items-center justify-center shadow-lg">1</div>
+        <h3 class="font-h3 text-h3 text-primary mb-3 mt-2">Apply online</h3>
+        <p class="text-secondary text-body-md">Fill out the short form below with your car's details. We'll get back within 48 hours with an estimated monthly earning range based on category, age and pick-up city.</p>
+      </div>
+      <div class="bg-white rounded-xl p-8 shadow-ambient border border-outline-variant/30 relative">
+        <div class="absolute -top-5 -left-5 w-12 h-12 rounded-full bg-[#FF5722] text-white font-h3 text-h3 flex items-center justify-center shadow-lg">2</div>
+        <h3 class="font-h3 text-h3 text-primary mb-3 mt-2">Bring the car in</h3>
+        <p class="text-secondary text-body-md">Drop the car at our Podgorica or Tivat office. We do a full inspection, photograph it for the fleet, hand you the partner agreement, and add the vehicle to availability.</p>
+      </div>
+      <div class="bg-white rounded-xl p-8 shadow-ambient border border-outline-variant/30 relative">
+        <div class="absolute -top-5 -left-5 w-12 h-12 rounded-full bg-[#FF5722] text-white font-h3 text-h3 flex items-center justify-center shadow-lg">3</div>
+        <h3 class="font-h3 text-h3 text-primary mb-3 mt-2">Get paid monthly</h3>
+        <p class="text-secondary text-body-md">We pay 65% of net rental income on the 5th of each month, straight to your bank account, with a detailed booking-by-booking statement. Cancel any month with 30 days' notice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits -->
+<section class="py-section-padding px-gutter bg-surface-container-low">
+  <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="font-h2 text-h2 text-primary mb-stack-md">Why partner with us?</h2>
+      <p class="font-body-lg text-secondary mb-stack-lg">
+        Owning a car in Montenegro is expensive — insurance, technical inspection, parking, the road tax. Monte Club turns that cost centre into a revenue stream while we shoulder the operational work.
+      </p>
+      <ul class="space-y-4">
+
+        <li class="flex gap-4 items-start">
+          <span class="material-symbols-outlined text-primary bg-secondary-container p-2 rounded-lg flex-shrink-0">shield</span>
+          <div>
+            <p class="font-label-bold text-primary text-base">Full insurance, on us</p>
+            <p class="text-body-sm text-secondary">Comprehensive coverage including zero-excess collision and theft — at no cost to you.</p>
+          </div>
+        </li>
+        <li class="flex gap-4 items-start">
+          <span class="material-symbols-outlined text-primary bg-secondary-container p-2 rounded-lg flex-shrink-0">local_car_wash</span>
+          <div>
+            <p class="font-label-bold text-primary text-base">Cleaning &amp; maintenance</p>
+            <p class="text-body-sm text-secondary">Every return: deep clean, fluids check, tyre pressure. Service intervals tracked and paid for.</p>
+          </div>
+        </li>
+        <li class="flex gap-4 items-start">
+          <span class="material-symbols-outlined text-primary bg-secondary-container p-2 rounded-lg flex-shrink-0">euro_symbol</span>
+          <div>
+            <p class="font-label-bold text-primary text-base">Transparent monthly payouts</p>
+            <p class="text-body-sm text-secondary">65/35 revenue share, detailed statement, paid on the 5th — no withholdings, no hidden deductions.</p>
+          </div>
+        </li>
+        <li class="flex gap-4 items-start">
+          <span class="material-symbols-outlined text-primary bg-secondary-container p-2 rounded-lg flex-shrink-0">calendar_month</span>
+          <div>
+            <p class="font-label-bold text-primary text-base">Block your own dates</p>
+            <p class="text-body-sm text-secondary">Need the car for a weekend? Block dates in the partner portal and the listing pauses automatically.</p>
+          </div>
+        </li>
+        <li class="flex gap-4 items-start">
+          <span class="material-symbols-outlined text-primary bg-secondary-container p-2 rounded-lg flex-shrink-0">verified_user</span>
+          <div>
+            <p class="font-label-bold text-primary text-base">Verified, vetted renters</p>
+            <p class="text-body-sm text-secondary">Every driver passes our document and credit-card checks before they get the keys to your vehicle.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="bg-primary text-on-primary rounded-2xl p-10 shadow-2xl">
+      <span class="text-body-sm uppercase tracking-widest text-tertiary-fixed-dim">Indicative monthly earnings</span>
+      <p class="font-price-display text-[64px] leading-none text-white font-bold mt-2 mb-stack-md">€450–950</p>
+      <p class="text-white/80 mb-stack-lg">Per economy-segment car, per month, based on 2024 partner statements. Premium and SUV categories earn more.</p>
+      <div class="grid grid-cols-3 gap-4 text-center">
+        <div class="bg-white/10 rounded-lg p-4">
+          <p class="text-tertiary-fixed-dim font-h3 text-h3">82%</p>
+          <p class="text-body-sm text-white/75 mt-1">Average occupancy May–Oct</p>
+        </div>
+        <div class="bg-white/10 rounded-lg p-4">
+          <p class="text-tertiary-fixed-dim font-h3 text-h3">€0</p>
+          <p class="text-body-sm text-white/75 mt-1">Up-front cost to join</p>
+        </div>
+        <div class="bg-white/10 rounded-lg p-4">
+          <p class="text-tertiary-fixed-dim font-h3 text-h3">30d</p>
+          <p class="text-body-sm text-white/75 mt-1">Notice to cancel, no penalty</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Application form -->
+<section class="py-section-padding px-gutter">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-stack-lg">
+      <h2 class="font-h2 text-h2 text-primary mb-stack-sm">Apply now</h2>
+      <p class="text-secondary font-body-md">Takes about 3 minutes. We respond within 48 hours.</p>
+    </div>
+    <form class="bg-white p-8 rounded-xl shadow-ambient flex flex-col gap-4 border border-outline-variant/30">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <label class="flex flex-col gap-2">
+          <span class="font-label-bold text-on-surface-variant text-sm">Full name</span>
+          <input type="text" required class="h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary"/>
+        </label>
+        <label class="flex flex-col gap-2">
+          <span class="font-label-bold text-on-surface-variant text-sm">Phone (with country code)</span>
+          <input type="tel" required placeholder="+382 ..." class="h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary"/>
+        </label>
+      </div>
+      <label class="flex flex-col gap-2">
+        <span class="font-label-bold text-on-surface-variant text-sm">Email</span>
+        <input type="email" required class="h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary"/>
+      </label>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <label class="flex flex-col gap-2">
+          <span class="font-label-bold text-on-surface-variant text-sm">Car make</span>
+          <input type="text" required placeholder="e.g. Volkswagen" class="h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary"/>
+        </label>
+        <label class="flex flex-col gap-2">
+          <span class="font-label-bold text-on-surface-variant text-sm">Car model</span>
+          <input type="text" required placeholder="e.g. Polo" class="h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary"/>
+        </label>
+        <label class="flex flex-col gap-2">
+          <span class="font-label-bold text-on-surface-variant text-sm">Year</span>
+          <input type="number" min="2010" max="2025" required class="h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary"/>
+        </label>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <label class="flex flex-col gap-2">
+          <span class="font-label-bold text-on-surface-variant text-sm">Pick-up city</span>
+          <select class="h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary bg-white">
+            <option>Podgorica</option>
+            <option>Tivat</option>
+            <option>Budva</option>
+            <option>Kotor</option>
+            <option>Bar</option>
+            <option>Herceg Novi</option>
+          </select>
+        </label>
+        <label class="flex flex-col gap-2">
+          <span class="font-label-bold text-on-surface-variant text-sm">Approx. days available per month</span>
+          <input type="number" min="1" max="31" placeholder="20" class="h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary"/>
+        </label>
+      </div>
+      <label class="flex flex-col gap-2">
+        <span class="font-label-bold text-on-surface-variant text-sm">Anything else we should know?</span>
+        <textarea rows="4" class="px-4 py-3 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary resize-y"></textarea>
+      </label>
+      <label class="flex items-start gap-3 text-body-sm text-secondary">
+        <input type="checkbox" required class="mt-1 rounded border-outline-variant"/>
+        <span>I confirm I am the legal owner of this vehicle and agree to the Monte Club partner terms.</span>
+      </label>
+      <button type="submit" class="bg-[#FF5722] hover:bg-[#E64A19] text-white font-label-bold h-14 rounded-lg shadow-lg uppercase tracking-wide">
+        Submit application
+      </button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-section-padding px-gutter flex flex-col items-center gap-stack-lg bg-primary text-on-primary">
+  <div class="max-w-container-max w-full flex flex-col md:flex-row justify-between items-start gap-12 border-b border-on-primary/10 pb-12">
+    <div class="flex flex-col gap-4 max-w-[320px]">
+      <span class="font-h3 text-h3 font-bold text-on-primary">MontenegroDrive</span>
+      <p class="text-body-sm opacity-80">Premium car rental in Montenegro for business travelers and tourists. We guarantee safety, quality, and the best prices.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed uppercase tracking-wider">Explore</h5>
+        <ul class="flex flex-col gap-2 opacity-80 text-body-sm">
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="search.html">Fleet</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="locations.html">Locations</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="travel-guide.html">Travel Guide</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed uppercase tracking-wider">Support</h5>
+        <ul class="flex flex-col gap-2 opacity-80 text-body-sm">
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="support.html">Contact Us</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="support.html#faq">FAQ</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="manage-booking.html">Manage Booking</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed uppercase tracking-wider">Monte Club</h5>
+        <p class="text-body-sm opacity-80">Partner with us to grow your car rental business in the region. Do you have a car that you don't use and want to earn money?</p>
+        <a class="border border-on-primary px-5 py-2 rounded-lg font-label-bold hover:bg-on-primary hover:text-primary transition-all w-fit text-center text-body-sm" href="monte-club.html">Join Monte Club</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed uppercase tracking-wider">Legal</h5>
+        <ul class="flex flex-col gap-2 opacity-80 text-body-sm">
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="legal.html#privacy">Privacy Policy</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="legal.html#terms">Terms of Service</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="legal.html#cookies">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row justify-between w-full max-w-container-max pt-2 opacity-70 text-body-sm gap-4">
+    <p>© 2024 MontenegroDrive Car Rentals. All rights reserved.</p>
+    <div class="flex gap-6 items-center">
+      <a href="#" aria-label="Facebook" class="hover:text-secondary-fixed"><span class="material-symbols-outlined">public</span></a>
+      <a href="#" aria-label="Instagram" class="hover:text-secondary-fixed"><span class="material-symbols-outlined">photo_camera</span></a>
+      <a href="#" aria-label="Share" class="hover:text-secondary-fixed"><span class="material-symbols-outlined">share</span></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

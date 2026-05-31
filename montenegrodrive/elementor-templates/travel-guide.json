@@ -1,0 +1,372 @@
+{
+  "version": "0.4",
+  "title": "MontenegroDrive \u2014 Travel Guide",
+  "type": "page",
+  "content": [
+    {
+      "id": "48bae13",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Header / Navigation"
+      },
+      "elements": [
+        {
+          "id": "c23a50a",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "b79b5b5",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<header class=\"fixed top-0 w-full z-50 bg-surface shadow-sm\">\n  <div class=\"max-w-container-max mx-auto flex justify-between items-center px-gutter py-4\">\n    <a href=\"index.html\" class=\"flex items-center gap-3 group\" aria-label=\"MontenegroDrive \u2014 Home\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 40 40\" class=\"w-10 h-10 flex-shrink-0 transition-transform group-hover:scale-105\" aria-hidden=\"true\">\n          <rect width=\"40\" height=\"40\" rx=\"8\" fill=\"#001835\"/>\n          <text x=\"20\" y=\"29\" font-family=\"'Plus Jakarta Sans', system-ui, sans-serif\" font-size=\"26\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#FF5722\">M</text>\n        </svg>\n        <span class=\"font-h2 text-h2 font-bold text-primary leading-none\">MontenegroDrive</span>\n      </a>\n    <nav class=\"hidden md:flex gap-stack-lg items-center\">\n      <a class=\"text-secondary font-body-md hover:text-primary-container transition-colors\" href=\"search.html\">Fleet</a>\n      <a class=\"text-primary font-label-bold border-b-2 border-primary hover:text-primary-container transition-colors\" href=\"travel-guide.html\">Travel Guide</a>\n      <a class=\"text-secondary font-body-md hover:text-primary-container transition-colors\" href=\"search.html\">Rentals</a>\n      <a class=\"text-secondary font-body-md hover:text-primary-container transition-colors\" href=\"locations.html\">Locations</a>\n    </nav>\n    <div class=\"flex items-center gap-stack-md\">\n      <a class=\"hidden lg:block text-primary font-label-bold hover:opacity-80 transition-opacity\" href=\"support.html\">Support</a>\n      <a class=\"bg-[#FF6B00] text-white px-6 py-2.5 rounded-lg font-label-bold shadow-ambient hover:scale-[1.02] transition-transform\" href=\"manage-booking.html\">Manage Booking</a>\n    </div>\n  </div>\n</header>",
+                "_title": "Header / Navigation"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "b79838d",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "The road to your next great adventure"
+      },
+      "elements": [
+        {
+          "id": "ec439a1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "b8fa8e7",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<section class=\"relative h-[680px] flex items-center overflow-hidden\">\n  <div class=\"absolute inset-0 z-0\">\n    <img class=\"w-full h-full object-cover\" alt=\"Mountain road in Montenegro\" src=\"https://images.pexels.com/photos/16907812/pexels-photo-16907812.jpeg\" loading=\"eager\"/>\n    <div class=\"absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent\"></div>\n  </div>\n  <div class=\"relative z-10 max-w-container-max mx-auto px-gutter w-full\">\n    <div class=\"max-w-2xl\">\n      <span class=\"inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-bold mb-stack-md\">Discover Montenegro</span>\n      <h1 class=\"font-h1 text-h1 text-white mb-stack-md\">The road to your next great adventure</h1>\n      <p class=\"font-body-lg text-body-lg text-white/90 mb-stack-lg leading-relaxed\">\n        From the breathtaking depths of the Tara Canyon to the majestic peaks of Durmitor. Explore Europe's best-kept secret with our exclusive guides and premium rental cars.\n      </p>\n      <div class=\"flex flex-wrap gap-stack-md\">\n        <a href=\"search.html\" class=\"bg-[#FF6B00] text-on-primary px-8 py-4 rounded-lg font-label-bold shadow-lg hover:brightness-110 transition-all flex items-center gap-2\">\n          Book your road trip <span class=\"material-symbols-outlined\">arrow_forward</span>\n        </a>\n        <button class=\"bg-glass border border-white/30 text-primary px-8 py-4 rounded-lg font-label-bold hover:bg-white transition-colors\">\n          View travel guides\n        </button>\n      </div>\n    </div>\n  </div>\n</section>",
+                "_title": "The road to your next great adventure"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "44b4b42",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Featured Stories"
+      },
+      "elements": [
+        {
+          "id": "51ab4db",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "dbb5745",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<section class=\"py-section-padding px-gutter max-w-container-max mx-auto\">\n  <div class=\"flex justify-between items-end mb-stack-lg flex-wrap gap-4\">\n    <div>\n      <h2 class=\"font-h2 text-h2 text-primary\">Featured Stories</h2>\n      <p class=\"text-secondary font-body-md\">Inspiration for your next journey through the Balkans</p>\n    </div>\n    <a class=\"text-primary font-label-bold flex items-center gap-1 hover:underline underline-offset-4\" href=\"travel-guide.html#all-articles\">\n      View all articles <span class=\"material-symbols-outlined\">trending_flat</span>\n    </a>\n  </div>\n  <div class=\"grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[580px]\">\n\n    <!-- Main Feature -->\n    <a href=\"article-road-trip-tips.html\" class=\"md:col-span-8 group relative overflow-hidden rounded-xl shadow-ambient bg-surface-container min-h-[320px] block\">\n      <img class=\"absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700\" alt=\"Tara Canyon road trip\" src=\"https://images.unsplash.com/photo-1502301103665-0b95cc738daf?q=80&w=1800&auto=format&fit=crop\"/>\n      <div class=\"absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent\"></div>\n      <div class=\"absolute bottom-0 left-0 p-stack-lg\">\n        <div class=\"flex gap-2 mb-3\">\n          <span class=\"bg-secondary-container text-on-secondary-container px-3 py-1 rounded-md text-body-sm font-label-bold uppercase tracking-wider\">Guide</span>\n        </div>\n        <h3 class=\"font-h2 text-h2 text-white mb-2\">10 Tips for Your Montenegro Road Trip</h3>\n        <p class=\"text-white/80 font-body-md max-w-lg mb-4\">Everything from hidden gas stations to the most beautiful viewpoints along the coast.</p>\n        <span class=\"inline-flex items-center text-white font-label-bold gap-2 group-hover:gap-4 transition-all\">\n          Read more <span class=\"material-symbols-outlined\">east</span>\n        </span>\n      </div>\n    </a>\n\n    <!-- Secondary Features Stack -->\n    <div class=\"md:col-span-4 flex flex-col gap-6\">\n      <a href=\"article-panoramic-routes.html\" class=\"flex-1 group relative overflow-hidden rounded-xl shadow-ambient min-h-[260px] block\">\n        <img class=\"absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700\" alt=\"Durmitor Ring \u2014 one of Montenegro's panoramic routes\" src=\"https://images.myguide-cdn.com/md/content/2/large/panoramic-routes-of-montenegro-durmitor-ring-710896.jpg\"/>\n        <div class=\"absolute inset-0 bg-primary/40 group-hover:bg-primary/20 transition-colors\"></div>\n        <div class=\"absolute bottom-0 p-stack-md\">\n          <h3 class=\"font-h3 text-h3 text-white\">Best Panoramic Routes in Europe</h3>\n          <span class=\"text-white/90 text-body-sm font-label-bold mt-2 inline-block\">Explore the routes \u2192</span>\n        </div>\n      </a>\n      <a href=\"article-driving-rules.html\" class=\"flex-1 group relative overflow-hidden rounded-xl shadow-ambient min-h-[260px] block\">\n        <img class=\"absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700\" alt=\"Car rental contract\" src=\"https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1400&auto=format&fit=crop\"/>\n        <div class=\"absolute inset-0 bg-primary/40 group-hover:bg-primary/20 transition-colors\"></div>\n        <div class=\"absolute bottom-0 p-stack-md\">\n          <h3 class=\"font-h3 text-h3 text-white\">Driving in Montenegro: What You Need to Know</h3>\n          <span class=\"text-white/90 text-body-sm font-label-bold mt-2 inline-block\">Safety Guide \u2192</span>\n        </div>\n      </a>\n    </div>\n\n  </div>\n</section>",
+                "_title": "Featured Stories"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "70b3ce1",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Best 4x4 Routes"
+      },
+      "elements": [
+        {
+          "id": "ec7f28b",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "64d3226",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<section class=\"py-section-padding px-gutter max-w-container-max mx-auto\">\n  <div class=\"flex flex-col md:flex-row justify-between items-end mb-stack-lg gap-4\">\n    <div class=\"max-w-2xl\">\n      <h2 class=\"font-h2 text-h2 text-primary mb-2\">Best 4x4 Routes</h2>\n      <p class=\"text-secondary font-body-md\">For those who seek the path less traveled. Discover the rugged beauty of the Montenegrin highlands where paved roads end and adventure begins.</p>\n    </div>\n  </div>\n  <div class=\"grid grid-cols-1 md:grid-cols-3 gap-8\">\n    <div class=\"flex flex-col gap-4\">\n      <div class=\"aspect-[4/3] rounded-xl overflow-hidden shadow-ambient\">\n        <img alt=\"The Cursed Mountains\" class=\"w-full h-full object-cover\" src=\"https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1400&auto=format&fit=crop\"/>\n      </div>\n      <div>\n        <h4 class=\"font-h3 text-[20px] text-primary mb-2\">Prokletije: The Cursed Mountains</h4>\n        <p class=\"text-body-sm text-secondary mb-4\">Challenge yourself on the steep trails leading to the heart of the Balkans' most dramatic range.</p>\n        <a class=\"text-primary font-label-bold flex items-center gap-1 hover:gap-2 transition-all\" href=\"article-prokletije.html\">Route Details <span class=\"material-symbols-outlined text-[18px]\">arrow_right_alt</span></a>\n      </div>\n    </div>\n    <div class=\"flex flex-col gap-4\">\n      <div class=\"aspect-[4/3] rounded-xl overflow-hidden shadow-ambient\">\n        <img alt=\"Mountain pasture in the Sinjajevina Highlands\" class=\"w-full h-full object-cover\" src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Sinjajevina.jpg?width=1400\" onerror=\"if(!this.dataset.f){this.dataset.f=1;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Sinjajevina_planina.jpg?width=1400'}else if(this.dataset.f==1){this.dataset.f=2;this.src='https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg'}else{this.onerror=null;this.src='https://images.pexels.com/photos/16907812/pexels-photo-16907812.jpeg'}\"/>\n      </div>\n      <div>\n        <h4 class=\"font-h3 text-[20px] text-primary mb-2\">The Sinjajevina Highlands</h4>\n        <p class=\"text-body-sm text-secondary mb-4\">Europe's second-largest mountain pasture offers endless rolling plateaus and ancient shepherd huts.</p>\n        <a class=\"text-primary font-label-bold flex items-center gap-1 hover:gap-2 transition-all\" href=\"article-sinjajevina.html\">Route Details <span class=\"material-symbols-outlined text-[18px]\">arrow_right_alt</span></a>\n      </div>\n    </div>\n    <div class=\"flex flex-col gap-4\">\n      <div class=\"aspect-[4/3] rounded-xl overflow-hidden shadow-ambient\">\n        <img alt=\"Komovi Peaks\" class=\"w-full h-full object-cover\" src=\"https://images.unsplash.com/photo-1454942901704-3c44c11b2ad1?q=80&w=1400&auto=format&fit=crop\"/>\n      </div>\n      <div>\n        <h4 class=\"font-h3 text-[20px] text-primary mb-2\">The Circular Komovi Route</h4>\n        <p class=\"text-body-sm text-secondary mb-4\">A perfect mix of forest trails and limestone rock crawls around three of Montenegro's most iconic peaks.</p>\n        <a class=\"text-primary font-label-bold flex items-center gap-1 hover:gap-2 transition-all\" href=\"article-komovi.html\">Route Details <span class=\"material-symbols-outlined text-[18px]\">arrow_right_alt</span></a>\n      </div>\n    </div>\n  </div>\n</section>",
+                "_title": "Best 4x4 Routes"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "c792a4f",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Border Crossing Rules"
+      },
+      "elements": [
+        {
+          "id": "4760ead",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "c3359ae",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<section class=\"py-section-padding bg-primary text-white\">\n  <div class=\"max-w-container-max mx-auto px-gutter\">\n    <div class=\"grid grid-cols-1 lg:grid-cols-2 gap-16 items-center\">\n      <div>\n        <h2 class=\"font-h2 text-h2 mb-stack-md\">Border Crossing Rules</h2>\n        <p class=\"font-body-lg text-white/80 mb-stack-lg\">\n          Planning to visit Croatia, Albania, or Bosnia? MontenegroDrive makes international travel easy. Here is everything you need to know about taking your rental car across the border.\n        </p>\n        <div class=\"space-y-6\">\n          <div class=\"flex gap-4\">\n            <div class=\"flex-shrink-0 w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center text-white\">\n              <span class=\"material-symbols-outlined\">description</span>\n            </div>\n            <div>\n              <h4 class=\"font-label-bold mb-1\">The Green Card</h4>\n              <p class=\"text-body-sm text-white/70\">Mandatory insurance for all neighboring countries. We provide this document with every cross-border rental.</p>\n            </div>\n          </div>\n          <div class=\"flex gap-4\">\n            <div class=\"flex-shrink-0 w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center text-white\">\n              <span class=\"material-symbols-outlined\">badge</span>\n            </div>\n            <div>\n              <h4 class=\"font-label-bold mb-1\">Required Documents</h4>\n              <p class=\"text-body-sm text-white/70\">Always keep your passport, driving license, and rental agreement ready at border checkpoints.</p>\n            </div>\n          </div>\n          <div class=\"flex gap-4\">\n            <div class=\"flex-shrink-0 w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center text-white\">\n              <span class=\"material-symbols-outlined\">map</span>\n            </div>\n            <div>\n              <h4 class=\"font-label-bold mb-1\">Permitted Countries</h4>\n              <p class=\"text-body-sm text-white/70\">Our vehicles are authorized for travel within the EU and Western Balkans with prior notification.</p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"bg-white/5 rounded-2xl p-8 border border-white/10\">\n        <h3 class=\"font-h3 text-h3 mb-6\">Border Wait Times</h3>\n        <p class=\"text-body-md text-white/80 mb-6\">Check live border traffic before you head out. Summer peak seasons can result in significant delays at popular crossings like Debeli Brijeg (Croatia).</p>\n        <div class=\"space-y-4\">\n          <div class=\"flex justify-between items-center pb-4 border-b border-white/10\">\n            <span>Croatia (Debeli Brijeg)</span>\n            <span class=\"px-3 py-1 bg-error/20 text-red-300 rounded-full text-[12px] font-label-bold uppercase\">60+ min</span>\n          </div>\n          <div class=\"flex justify-between items-center pb-4 border-b border-white/10\">\n            <span>Albania (Sukobin)</span>\n            <span class=\"px-3 py-1 bg-secondary-container/20 text-secondary-fixed rounded-full text-[12px] font-label-bold uppercase\">20 min</span>\n          </div>\n          <div class=\"flex justify-between items-center pb-4 border-b border-white/10\">\n            <span>Bosnia (Sitnica)</span>\n            <span class=\"px-3 py-1 bg-secondary-container/20 text-secondary-fixed rounded-full text-[12px] font-label-bold uppercase\">15 min</span>\n          </div>\n        </div>\n        <button class=\"w-full mt-8 py-3 rounded-lg border border-white/30 font-label-bold hover:bg-white hover:text-primary transition-all\">\n          Download Full Border Guide\n        </button>\n      </div>\n    </div>\n  </div>\n</section>",
+                "_title": "Border Crossing Rules"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "1f428f9",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Ready to roll out?"
+      },
+      "elements": [
+        {
+          "id": "c2a3cda",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "777be4d",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<section class=\"bg-surface-container-low py-section-padding\">\n  <div class=\"max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 items-center gap-16\">\n    <div>\n      <h2 class=\"font-h2 text-h2 text-primary mb-stack-md\">Ready to roll out?</h2>\n      <p class=\"font-body-lg text-body-lg text-secondary mb-stack-lg\">\n        Find the perfect car for your adventure. We offer everything from agile convertibles for coastal roads to robust 4WD vehicles for the mountains.\n      </p>\n      <div class=\"flex flex-col gap-4\">\n        <div class=\"flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-outline-variant\">\n          <span class=\"material-symbols-outlined text-primary bg-secondary-container p-2 rounded-lg\">location_on</span>\n          <div>\n            <p class=\"text-body-sm text-secondary\">Choose location</p>\n            <p class=\"font-label-bold\">Podgorica Airport (TGD)</p>\n          </div>\n        </div>\n        <a href=\"search.html\" class=\"bg-[#FF6B00] text-white w-full py-4 rounded-lg font-label-bold shadow-lg hover:translate-y-[-2px] transition-all text-center\">\n          Search Available Cars\n        </a>\n      </div>\n    </div>\n    <div class=\"relative\">\n      <div class=\"aspect-square rounded-full bg-primary-container/5 absolute -top-10 -right-10 w-64 h-64 blur-3xl\"></div>\n      <img class=\"relative z-10 rounded-2xl shadow-ambient w-full\" alt=\"Luxury silver SUV\" src=\"https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop\"/>\n      <div class=\"absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-ambient z-20 flex items-center gap-4\">\n        <div class=\"w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center\">\n          <span class=\"material-symbols-outlined text-primary\">verified</span>\n        </div>\n        <div>\n          <p class=\"font-label-bold\">Price Guarantee</p>\n          <p class=\"text-body-sm text-secondary\">No hidden fees</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+                "_title": "Ready to roll out?"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "8bce715",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Get travel tips directly to your inbox"
+      },
+      "elements": [
+        {
+          "id": "d82860c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "ab813f4",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<section class=\"py-section-padding px-gutter max-w-container-max mx-auto text-center\">\n  <div class=\"max-w-3xl mx-auto bg-primary text-on-primary p-12 rounded-3xl relative overflow-hidden shadow-2xl\">\n    <div class=\"absolute top-0 right-0 p-8 opacity-10 pointer-events-none\">\n      <span class=\"material-symbols-outlined text-white\" style=\"font-size: 120px; font-variation-settings: 'FILL' 1;\">mail</span>\n    </div>\n    <h2 class=\"font-h2 text-h2 mb-4 relative\">Get travel tips directly to your inbox</h2>\n    <p class=\"font-body-md mb-8 text-on-primary-container relative\">\n      Subscribe to our newsletter for the latest updates on road conditions, local gems, and exclusive offers.\n    </p>\n    <form class=\"flex flex-col sm:flex-row gap-4 max-w-md mx-auto relative\">\n      <input class=\"flex-grow px-6 py-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-secondary-container\" placeholder=\"Your email address\" type=\"email\"/>\n      <button type=\"submit\" class=\"bg-secondary-container text-primary px-8 py-4 rounded-lg font-label-bold hover:bg-white transition-colors\">\n        Subscribe\n      </button>\n    </form>\n    <p class=\"mt-6 text-body-sm text-on-primary-container relative\">We respect your privacy. Unsubscribe at any time.</p>\n  </div>\n</section>",
+                "_title": "Get travel tips directly to your inbox"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "39b5250",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Footer"
+      },
+      "elements": [
+        {
+          "id": "cc47746",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "99bf603",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<footer class=\"w-full py-section-padding px-gutter flex flex-col items-center gap-stack-lg bg-primary text-on-primary\">\n  <div class=\"font-h3 text-h3 font-bold text-on-primary\">MontenegroDrive</div>\n  <div class=\"flex flex-wrap justify-center gap-stack-lg\">\n    <a class=\"text-on-primary-container font-body-sm hover:text-secondary-fixed opacity-90 hover:opacity-100\" href=\"legal.html#privacy\">Privacy Policy</a>\n    <a class=\"text-on-primary-container font-body-sm hover:text-secondary-fixed opacity-90 hover:opacity-100\" href=\"legal.html#terms\">Terms of Service</a>\n    <a class=\"text-on-primary-container font-body-sm hover:text-secondary-fixed opacity-90 hover:opacity-100\" href=\"monte-club.html\">Monte Club</a>\n    <a class=\"text-on-primary-container font-body-sm hover:text-secondary-fixed opacity-90 hover:opacity-100\" href=\"support.html\">Contact Us</a>\n    <a class=\"text-on-primary-container font-body-sm hover:text-secondary-fixed opacity-90 hover:opacity-100\" href=\"locations.html\">Locations</a>\n  </div>\n  <div class=\"flex gap-stack-md mt-4\">\n    <a class=\"text-on-primary hover:text-secondary-fixed transition-colors\" href=\"#\">\n      <span class=\"material-symbols-outlined\">public</span>\n    </a>\n    <a class=\"text-on-primary hover:text-secondary-fixed transition-colors\" href=\"#\">\n      <span class=\"material-symbols-outlined\">share</span>\n    </a>\n    <a class=\"text-on-primary hover:text-secondary-fixed transition-colors\" href=\"#\">\n      <span class=\"material-symbols-outlined\">phone</span>\n    </a>\n  </div>\n  <div class=\"mt-stack-lg pt-stack-lg border-t border-white/10 w-full text-center\">\n    <p class=\"font-body-sm text-body-sm text-on-primary-container\">\n      \u00a9 2024 MontenegroDrive Car Rentals. All rights reserved.\n    </p>\n  </div>\n</footer>",
+                "_title": "Footer"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": {
+    "template": "elementor_canvas",
+    "background_background": "classic",
+    "background_color": "#f7f9fb"
+  }
+}

@@ -1,0 +1,62 @@
+/*
+ * MontenegroDrive design tokens — utility-class fallback layer
+ *
+ * Loaded by the Tailwind CDN config (see functions.php → montenegrodrive_get_tailwind_config_js).
+ * This file is only used as a reference for compiling a production Tailwind build —
+ * the runtime styling comes from the Tailwind CDN script in functions.php.
+ *
+ * If you swap Tailwind CDN for a compiled stylesheet, paste this content into
+ * your tailwind.config.js theme.extend section.
+ */
+
+:root {
+    --md-primary:                 #001835;
+    --md-primary-container:       #0f2d52;
+    --md-on-primary:              #ffffff;
+    --md-on-primary-container:    #7b95c0;
+    --md-secondary:               #526069;
+    --md-secondary-container:     #d3e2ed;
+    --md-on-secondary-container:  #56656e;
+    --md-tertiary:                #291300;
+    --md-tertiary-container:      #472400;
+    --md-tertiary-fixed:          #ffdcc1;
+    --md-brand-accent:            #FF5722;
+    --md-brand-accent-soft:       #FF7E1D;
+    --md-background:              #f7f9fb;
+    --md-surface:                 #f7f9fb;
+    --md-on-surface:              #191c1e;
+    --md-on-surface-variant:      #43474e;
+    --md-outline:                 #74777f;
+    --md-outline-variant:         #c4c6cf;
+    --md-error:                   #ba1a1a;
+
+    --md-radius:                  0.5rem;
+    --md-radius-xl:               0.75rem;
+    --md-shadow-ambient:          0 4px 20px rgba(15, 45, 82, 0.08);
+
+    --md-font-heading:  'Plus Jakarta Sans', system-ui, sans-serif;
+    --md-font-body:     'Inter', system-ui, sans-serif;
+}
+
+/* Convenience class for the brand button — usable from any Elementor HTML widget */
+.md-btn-primary {
+    background: var(--md-brand-accent);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: var(--md-radius);
+    font-weight: 600;
+    font-family: var(--md-font-body);
+    transition: background-color 200ms ease, transform 200ms ease;
+}
+.md-btn-primary:hover { background: #E64A19; transform: translateY(-1px); }
+
+.md-btn-secondary {
+    background: transparent;
+    color: var(--md-primary);
+    padding: 14px 28px;
+    border-radius: var(--md-radius);
+    border: 1px solid var(--md-primary);
+    font-weight: 600;
+    font-family: var(--md-font-body);
+}
+.md-btn-secondary:hover { background: var(--md-primary); color: #fff; }

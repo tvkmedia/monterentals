@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Manage Booking — MontenegroDrive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "secondary-container":"#d3e2ed","on-secondary":"#ffffff","inverse-on-surface":"#eff1f3",
+        "surface-variant":"#e0e3e5","background":"#f7f9fb","surface-tint":"#455f87",
+        "on-surface-variant":"#43474e","secondary-fixed":"#d6e5ef","primary-fixed-dim":"#adc8f5",
+        "surface-container-low":"#f2f4f6","surface-dim":"#d8dadc","on-tertiary-fixed":"#2e1500",
+        "on-primary-fixed":"#001b3b","on-error":"#ffffff","on-tertiary":"#ffffff",
+        "on-tertiary-fixed-variant":"#663d16","on-primary-container":"#7b95c0",
+        "on-secondary-fixed":"#0f1d25","tertiary-container":"#472400","error":"#ba1a1a",
+        "surface":"#f7f9fb","on-primary-fixed-variant":"#2d476e","outline-variant":"#c4c6cf",
+        "on-surface":"#191c1e","outline":"#74777f","surface-container":"#eceef0",
+        "surface-bright":"#f7f9fb","on-background":"#191c1e","tertiary":"#291300",
+        "primary-fixed":"#d5e3ff","inverse-primary":"#adc8f5","on-tertiary-container":"#bf895b",
+        "on-secondary-container":"#56656e","surface-container-highest":"#e0e3e5",
+        "surface-container-high":"#e6e8ea","secondary":"#526069","secondary-fixed-dim":"#bac9d3",
+        "on-error-container":"#93000a","tertiary-fixed-dim":"#f6ba88","tertiary-fixed":"#ffdcc1",
+        "primary":"#001835","inverse-surface":"#2d3133","on-primary":"#ffffff",
+        "error-container":"#ffdad6","primary-container":"#0f2d52",
+        "surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#3b4951",
+        "brand-accent":"#FF5722"
+      },
+      borderRadius: { DEFAULT:"0.25rem", lg:"0.5rem", xl:"0.75rem", "2xl":"1rem", "3xl":"1.5rem", full:"9999px" },
+      spacing: {
+        "gutter":"24px","margin-mobile":"16px","stack-sm":"8px","stack-lg":"32px",
+        "container-max":"1280px","stack-md":"16px","section-padding":"80px"
+      },
+      fontFamily: {
+        "body-md":["Inter"],"body-sm":["Inter"],"label-bold":["Inter"],
+        "h2":["Plus Jakarta Sans"],"body-lg":["Inter"],"h3":["Plus Jakarta Sans"],
+        "h1":["Plus Jakarta Sans"],"price-display":["Plus Jakarta Sans"]
+      },
+      fontSize: {
+        "body-md":["16px",{ lineHeight:"1.5", fontWeight:"400" }],
+        "body-sm":["14px",{ lineHeight:"1.5", fontWeight:"400" }],
+        "label-bold":["14px",{ lineHeight:"1.2", fontWeight:"600" }],
+        "h2":["32px",{ lineHeight:"1.3", fontWeight:"700" }],
+        "body-lg":["18px",{ lineHeight:"1.6", fontWeight:"400" }],
+        "h3":["24px",{ lineHeight:"1.4", fontWeight:"600" }],
+        "h1":["48px",{ lineHeight:"1.2", letterSpacing:"-0.02em", fontWeight:"700" }],
+        "price-display":["28px",{ lineHeight:"1", letterSpacing:"-0.01em", fontWeight:"700" }]
+      }
+    }
+  }
+};
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+.shadow-ambient { box-shadow: 0 4px 20px rgba(15, 45, 82, 0.08); }
+</style>
+<!-- BEGIN SEO -->
+<meta name="description" content="Sign in or look up by reference to change dates, upgrade your vehicle, add extras, or cancel a MontenegroDrive booking."/>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"/>
+<meta name="theme-color" content="#001835"/>
+<link rel="canonical" href="https://montenegrodrive.com/manage-booking/"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="MontenegroDrive"/>
+<meta property="og:title" content="Manage Booking — MontenegroDrive"/>
+<meta property="og:description" content="Sign in or look up by reference to change dates, upgrade your vehicle, add extras, or cancel a MontenegroDrive booking."/>
+<meta property="og:url" content="https://montenegrodrive.com/manage-booking/"/>
+<meta property="og:image" content="https://montenegrodrive.com/screenshot.png"/>
+<meta property="og:locale" content="en_US"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Manage Booking — MontenegroDrive"/>
+<meta name="twitter:description" content="Sign in or look up by reference to change dates, upgrade your vehicle, add extras, or cancel a MontenegroDrive booking."/>
+<meta name="twitter:image" content="https://montenegrodrive.com/screenshot.png"/>
+
+<!-- Favicon (SVG with raster fallback) -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon.svg"/>
+<link rel="mask-icon" href="favicon.svg" color="#001835"/>
+<!-- END SEO -->
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface shadow-sm">
+  <div class="max-w-container-max mx-auto flex justify-between items-center px-gutter py-4">
+    <div class="flex items-center gap-10">
+      <a href="index.html" class="flex items-center gap-3 group" aria-label="MontenegroDrive — Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" class="w-10 h-10 flex-shrink-0 transition-transform group-hover:scale-105" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#001835"/>
+          <text x="20" y="29" font-family="'Plus Jakarta Sans', system-ui, sans-serif"
+                font-size="26" font-weight="800" text-anchor="middle" fill="#FF5722">M</text>
+        </svg>
+        <span class="font-h2 text-h2 font-bold text-primary leading-none">MontenegroDrive</span>
+      </a>
+      <nav class="hidden md:flex gap-6">
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="search.html">Fleet</a>
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="travel-guide.html">Travel Guide</a>
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="search.html">Rentals</a>
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="locations.html">Locations</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4">
+      <a class="hidden md:block text-secondary font-label-bold hover:text-primary transition-colors" href="support.html">Support</a>
+      <a class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-bold hover:shadow-lg transition-all" href="manage-booking.html">Manage Booking</a>
+    </div>
+  </div>
+</header>
+<main class="pt-[72px]">
+
+<section class="py-section-padding px-gutter min-h-[calc(100vh-72px)] bg-gradient-to-br from-primary via-primary-container to-primary">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+    <!-- Left: marketing copy -->
+    <div class="text-white">
+      <span class="inline-block bg-white/15 backdrop-blur-sm px-4 py-1.5 rounded-full font-label-bold mb-stack-md text-white/90 border border-white/20">
+        Self-service portal
+      </span>
+      <h1 class="font-h1 text-h1 mb-stack-md drop-shadow-md">Manage your booking in seconds</h1>
+      <p class="font-body-lg text-body-lg text-white/85 mb-stack-lg leading-relaxed">
+        Sign in with the email you booked under and your booking number to change dates, upgrade your vehicle, add extras, request an invoice, or cancel.
+      </p>
+      <ul class="flex flex-col gap-stack-md">
+        <li class="flex items-start gap-4">
+          <span class="material-symbols-outlined text-tertiary-fixed-dim mt-1">edit_calendar</span>
+          <div>
+            <p class="font-label-bold">Change dates &amp; pick-up location</p>
+            <p class="text-body-sm text-white/75">Free until 48 hours before pick-up.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="material-symbols-outlined text-tertiary-fixed-dim mt-1">upgrade</span>
+          <div>
+            <p class="font-label-bold">Upgrade your vehicle</p>
+            <p class="text-body-sm text-white/75">Pay only the difference if availability allows.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="material-symbols-outlined text-tertiary-fixed-dim mt-1">receipt_long</span>
+          <div>
+            <p class="font-label-bold">Download your VAT invoice</p>
+            <p class="text-body-sm text-white/75">Issued from our Podgorica office.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="material-symbols-outlined text-tertiary-fixed-dim mt-1">cancel</span>
+          <div>
+            <p class="font-label-bold">Cancel for a full refund</p>
+            <p class="text-body-sm text-white/75">No questions asked outside the 48h window.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right: login card -->
+    <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-10">
+      <div class="flex gap-2 mb-stack-lg p-1 bg-surface-container-low rounded-lg">
+        <button id="tab-login"  type="button" class="flex-1 py-2.5 rounded-md bg-primary text-on-primary font-label-bold transition-all">Sign in</button>
+        <button id="tab-lookup" type="button" class="flex-1 py-2.5 rounded-md text-secondary font-label-bold hover:bg-white transition-all">Look up by ref</button>
+      </div>
+
+      <!-- Sign-in form -->
+      <form id="form-login" class="flex flex-col gap-4">
+        <label class="flex flex-col gap-2">
+          <span class="font-label-bold text-on-surface-variant text-sm">Email address</span>
+          <input type="email" required placeholder="you@example.com" class="h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary"/>
+        </label>
+        <label class="flex flex-col gap-2">
+          <span class="font-label-bold text-on-surface-variant text-sm">Password</span>
+          <input type="password" required placeholder="••••••••" class="h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary"/>
+        </label>
+        <div class="flex justify-between items-center text-body-sm">
+          <label class="flex items-center gap-2 text-secondary"><input type="checkbox" class="rounded border-outline-variant"/> Remember me</label>
+          <a href="support.html" class="text-primary font-label-bold">Forgot password?</a>
+        </div>
+        <button type="button" onclick="document.getElementById('demo-booking').scrollIntoView({behavior:'smooth'})"
+                class="bg-[#FF5722] hover:bg-[#E64A19] text-white font-label-bold h-12 rounded-lg shadow-lg transition-all uppercase tracking-wide">
+          Sign in
+        </button>
+        <p class="text-center text-body-sm text-secondary">Don't have an account? <a href="search.html" class="text-primary font-label-bold">Book your first car →</a></p>
+      </form>
+
+      <!-- Reference lookup -->
+      <form id="form-lookup" class="hidden flex-col gap-4">
+        <label class="flex flex-col gap-2">
+          <span class="font-label-bold text-on-surface-variant text-sm">Booking reference</span>
+          <input type="text" required placeholder="MNE-123456" class="h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary uppercase tracking-wider"/>
+        </label>
+        <label class="flex flex-col gap-2">
+          <span class="font-label-bold text-on-surface-variant text-sm">Email used at booking</span>
+          <input type="email" required class="h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary"/>
+        </label>
+        <button type="button" onclick="document.getElementById('demo-booking').scrollIntoView({behavior:'smooth'})"
+                class="bg-primary hover:bg-primary-container text-white font-label-bold h-12 rounded-lg shadow-lg transition-all uppercase tracking-wide">
+          Find my booking
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Demo booking dashboard (shown after "login") -->
+<section id="demo-booking" class="py-section-padding px-gutter bg-background">
+  <div class="max-w-container-max mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-stack-lg gap-4">
+      <div>
+        <span class="text-body-sm text-secondary">Booking reference</span>
+        <h2 class="font-h2 text-h2 text-primary">MNE-298714</h2>
+      </div>
+      <span class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full font-label-bold uppercase tracking-wider text-xs">Confirmed</span>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Car card -->
+      <div class="bg-white rounded-xl shadow-ambient overflow-hidden">
+        <img class="w-full h-44 object-cover" alt="Volkswagen Polo" src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?q=80&amp;w=1200&amp;auto=format&amp;fit=crop"/>
+        <div class="p-6">
+          <h3 class="font-h3 text-h3 text-primary mb-1">Volkswagen Polo</h3>
+          <p class="text-body-sm text-secondary mb-stack-md">Economy · Manual · A/C · 5 seats</p>
+          <button class="text-primary font-label-bold flex items-center gap-2 hover:gap-3 transition-all">
+            Upgrade vehicle <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Itinerary -->
+      <div class="bg-white rounded-xl shadow-ambient p-6 lg:col-span-2 flex flex-col gap-4">
+        <h3 class="font-h3 text-h3 text-primary mb-2">Your itinerary</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="border border-outline-variant/40 rounded-lg p-4">
+            <p class="text-body-sm text-secondary uppercase tracking-wider mb-1">Pick-up</p>
+            <p class="font-label-bold text-primary text-base">Tivat Airport (TIV)</p>
+            <p class="text-body-sm text-secondary">Sat, 7 Jun 2025 · 14:30</p>
+          </div>
+          <div class="border border-outline-variant/40 rounded-lg p-4">
+            <p class="text-body-sm text-secondary uppercase tracking-wider mb-1">Drop-off</p>
+            <p class="font-label-bold text-primary text-base">Podgorica Airport (TGD)</p>
+            <p class="text-body-sm text-secondary">Sat, 14 Jun 2025 · 11:00</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <button class="border border-primary text-primary font-label-bold px-4 py-2 rounded-lg hover:bg-primary hover:text-on-primary transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined text-[18px]">edit_calendar</span> Change dates
+          </button>
+          <button class="border border-primary text-primary font-label-bold px-4 py-2 rounded-lg hover:bg-primary hover:text-on-primary transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined text-[18px]">add_location</span> Change location
+          </button>
+          <button class="border border-primary text-primary font-label-bold px-4 py-2 rounded-lg hover:bg-primary hover:text-on-primary transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined text-[18px]">add</span> Add extras
+          </button>
+        </div>
+      </div>
+
+      <!-- Price summary -->
+      <div class="bg-white rounded-xl shadow-ambient p-6 lg:col-span-2 flex flex-col gap-3">
+        <h3 class="font-h3 text-h3 text-primary mb-2">Price breakdown</h3>
+        <div class="flex justify-between text-body-md"><span class="text-secondary">7 days @ 45 €/day</span><span>315.00 €</span></div>
+        <div class="flex justify-between text-body-md"><span class="text-secondary">Cross-border (Croatia)</span><span>21.00 €</span></div>
+        <div class="flex justify-between text-body-md"><span class="text-secondary">Additional driver</span><span>35.00 €</span></div>
+        <div class="flex justify-between text-body-md text-error"><span>Loyalty discount</span><span>−18.00 €</span></div>
+        <div class="border-t border-outline-variant/40 my-2"></div>
+        <div class="flex justify-between font-h3 text-h3 text-primary"><span>Total paid</span><span>353.00 €</span></div>
+        <button class="text-primary font-label-bold underline underline-offset-4 text-left">Download VAT invoice</button>
+      </div>
+
+      <!-- Quick actions -->
+      <div class="bg-primary-container text-on-primary rounded-xl p-6 text-white flex flex-col gap-3">
+        <h3 class="font-h3 text-h3">Need help?</h3>
+        <p class="text-body-sm opacity-90">Talk to a real human in under a minute.</p>
+        <a href="tel:+38220123456" class="bg-[#FF5722] hover:bg-[#E64A19] text-white font-label-bold px-6 py-3 rounded-lg text-center">Call +382 20 123 456</a>
+        <a href="support.html" class="border border-white/40 text-white font-label-bold px-6 py-3 rounded-lg text-center hover:bg-white hover:text-primary transition-all">Open a chat</a>
+        <button class="text-white/80 hover:text-white text-body-sm underline underline-offset-4 mt-2 text-left">Cancel this booking</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Tiny tab toggle between the sign-in and ref-lookup forms.
+  (function () {
+    var login = document.getElementById('form-login');
+    var lookup = document.getElementById('form-lookup');
+    var tabL = document.getElementById('tab-login');
+    var tabR = document.getElementById('tab-lookup');
+    function show(which) {
+      if (which === 'login') {
+        login.classList.remove('hidden'); login.classList.add('flex');
+        lookup.classList.add('hidden'); lookup.classList.remove('flex');
+        tabL.classList.add('bg-primary','text-on-primary');
+        tabL.classList.remove('text-secondary');
+        tabR.classList.remove('bg-primary','text-on-primary');
+        tabR.classList.add('text-secondary');
+      } else {
+        lookup.classList.remove('hidden'); lookup.classList.add('flex');
+        login.classList.add('hidden'); login.classList.remove('flex');
+        tabR.classList.add('bg-primary','text-on-primary');
+        tabR.classList.remove('text-secondary');
+        tabL.classList.remove('bg-primary','text-on-primary');
+        tabL.classList.add('text-secondary');
+      }
+    }
+    tabL && tabL.addEventListener('click', function(){ show('login'); });
+    tabR && tabR.addEventListener('click', function(){ show('lookup'); });
+  })();
+</script>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-section-padding px-gutter flex flex-col items-center gap-stack-lg bg-primary text-on-primary">
+  <div class="max-w-container-max w-full flex flex-col md:flex-row justify-between items-start gap-12 border-b border-on-primary/10 pb-12">
+    <div class="flex flex-col gap-4 max-w-[320px]">
+      <span class="font-h3 text-h3 font-bold text-on-primary">MontenegroDrive</span>
+      <p class="text-body-sm opacity-80">Premium car rental in Montenegro for business travelers and tourists. We guarantee safety, quality, and the best prices.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed uppercase tracking-wider">Explore</h5>
+        <ul class="flex flex-col gap-2 opacity-80 text-body-sm">
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="search.html">Fleet</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="locations.html">Locations</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="travel-guide.html">Travel Guide</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed uppercase tracking-wider">Support</h5>
+        <ul class="flex flex-col gap-2 opacity-80 text-body-sm">
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="support.html">Contact Us</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="support.html#faq">FAQ</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="manage-booking.html">Manage Booking</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed uppercase tracking-wider">Monte Club</h5>
+        <p class="text-body-sm opacity-80">Partner with us to grow your car rental business in the region. Do you have a car that you don't use and want to earn money?</p>
+        <a class="border border-on-primary px-5 py-2 rounded-lg font-label-bold hover:bg-on-primary hover:text-primary transition-all w-fit text-center text-body-sm" href="monte-club.html">Join Monte Club</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed uppercase tracking-wider">Legal</h5>
+        <ul class="flex flex-col gap-2 opacity-80 text-body-sm">
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="legal.html#privacy">Privacy Policy</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="legal.html#terms">Terms of Service</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="legal.html#cookies">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row justify-between w-full max-w-container-max pt-2 opacity-70 text-body-sm gap-4">
+    <p>© 2024 MontenegroDrive Car Rentals. All rights reserved.</p>
+    <div class="flex gap-6 items-center">
+      <a href="#" aria-label="Facebook" class="hover:text-secondary-fixed"><span class="material-symbols-outlined">public</span></a>
+      <a href="#" aria-label="Instagram" class="hover:text-secondary-fixed"><span class="material-symbols-outlined">photo_camera</span></a>
+      <a href="#" aria-label="Share" class="hover:text-secondary-fixed"><span class="material-symbols-outlined">share</span></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

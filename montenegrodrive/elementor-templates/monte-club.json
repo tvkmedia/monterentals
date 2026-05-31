@@ -1,0 +1,282 @@
+{
+  "version": "0.4",
+  "title": "MontenegroDrive \u2014 Monte Club",
+  "type": "page",
+  "content": [
+    {
+      "id": "78e9948",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Header / Navigation"
+      },
+      "elements": [
+        {
+          "id": "20ce2c1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "6f2fca3",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<header class=\"fixed top-0 w-full z-50 bg-surface shadow-sm\">\n  <div class=\"max-w-container-max mx-auto flex justify-between items-center px-gutter py-4\">\n    <div class=\"flex items-center gap-10\">\n      <a href=\"index.html\" class=\"flex items-center gap-3 group\" aria-label=\"MontenegroDrive \u2014 Home\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 40 40\" class=\"w-10 h-10 flex-shrink-0 transition-transform group-hover:scale-105\" aria-hidden=\"true\">\n          <rect width=\"40\" height=\"40\" rx=\"8\" fill=\"#001835\"/>\n          <text x=\"20\" y=\"29\" font-family=\"'Plus Jakarta Sans', system-ui, sans-serif\" font-size=\"26\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#FF5722\">M</text>\n        </svg>\n        <span class=\"font-h2 text-h2 font-bold text-primary leading-none\">MontenegroDrive</span>\n      </a>\n      <nav class=\"hidden md:flex gap-6\">\n        <a class=\"text-secondary font-body-md hover:text-primary-container transition-colors\" href=\"search.html\">Fleet</a>\n        <a class=\"text-secondary font-body-md hover:text-primary-container transition-colors\" href=\"travel-guide.html\">Travel Guide</a>\n        <a class=\"text-secondary font-body-md hover:text-primary-container transition-colors\" href=\"search.html\">Rentals</a>\n        <a class=\"text-secondary font-body-md hover:text-primary-container transition-colors\" href=\"locations.html\">Locations</a>\n      </nav>\n    </div>\n    <div class=\"flex items-center gap-4\">\n      <a class=\"hidden md:block text-secondary font-label-bold hover:text-primary transition-colors\" href=\"support.html\">Support</a>\n      <a class=\"bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-bold hover:shadow-lg transition-all\" href=\"manage-booking.html\">Manage Booking</a>\n    </div>\n  </div>\n</header>",
+                "_title": "Header / Navigation"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "6deacfe",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Earn money with your idle car"
+      },
+      "elements": [
+        {
+          "id": "4e4f3f2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "d9af1e6",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<section class=\"relative h-[460px] flex items-center overflow-hidden\">\n  <div class=\"absolute inset-0 z-0\">\n    <img class=\"w-full h-full object-cover\" alt=\"\" src=\"https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2000&auto=format&fit=crop\"/>\n    <div class=\"absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/50 to-primary/30\"></div>\n  </div>\n  <div class=\"relative z-10 max-w-container-max mx-auto px-gutter w-full\">\n    <div class=\"max-w-3xl\">\n      <span class=\"inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-bold mb-stack-md\">Monte Club \u00b7 Partner programme</span>\n      <h1 class=\"font-h1 text-h1 text-white mb-stack-md drop-shadow-md\">Earn money with your idle car</h1>\n      <p class=\"font-body-lg text-body-lg text-white/90 leading-relaxed\">Monte Club is MontenegroDrive's partner programme. Do you have a car that you don't use? List it with us, we handle the customers, insurance, cleaning and maintenance \u2014 you collect a monthly payout.</p>\n    </div>\n  </div>\n</section>",
+                "_title": "Earn money with your idle car"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "6678e83",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "How it works"
+      },
+      "elements": [
+        {
+          "id": "be3883a",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "1431006",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<section class=\"py-section-padding px-gutter\">\n  <div class=\"max-w-container-max mx-auto\">\n    <div class=\"text-center mb-stack-lg\">\n      <h2 class=\"font-h2 text-h2 text-primary mb-stack-sm\">How it works</h2>\n      <p class=\"text-secondary font-body-md max-w-xl mx-auto\">Three steps, two visits to our office, and your car starts paying for itself.</p>\n    </div>\n    <div class=\"grid grid-cols-1 md:grid-cols-3 gap-8\">\n      <div class=\"bg-white rounded-xl p-8 shadow-ambient border border-outline-variant/30 relative\">\n        <div class=\"absolute -top-5 -left-5 w-12 h-12 rounded-full bg-[#FF5722] text-white font-h3 text-h3 flex items-center justify-center shadow-lg\">1</div>\n        <h3 class=\"font-h3 text-h3 text-primary mb-3 mt-2\">Apply online</h3>\n        <p class=\"text-secondary text-body-md\">Fill out the short form below with your car's details. We'll get back within 48 hours with an estimated monthly earning range based on category, age and pick-up city.</p>\n      </div>\n      <div class=\"bg-white rounded-xl p-8 shadow-ambient border border-outline-variant/30 relative\">\n        <div class=\"absolute -top-5 -left-5 w-12 h-12 rounded-full bg-[#FF5722] text-white font-h3 text-h3 flex items-center justify-center shadow-lg\">2</div>\n        <h3 class=\"font-h3 text-h3 text-primary mb-3 mt-2\">Bring the car in</h3>\n        <p class=\"text-secondary text-body-md\">Drop the car at our Podgorica or Tivat office. We do a full inspection, photograph it for the fleet, hand you the partner agreement, and add the vehicle to availability.</p>\n      </div>\n      <div class=\"bg-white rounded-xl p-8 shadow-ambient border border-outline-variant/30 relative\">\n        <div class=\"absolute -top-5 -left-5 w-12 h-12 rounded-full bg-[#FF5722] text-white font-h3 text-h3 flex items-center justify-center shadow-lg\">3</div>\n        <h3 class=\"font-h3 text-h3 text-primary mb-3 mt-2\">Get paid monthly</h3>\n        <p class=\"text-secondary text-body-md\">We pay 65% of net rental income on the 5th of each month, straight to your bank account, with a detailed booking-by-booking statement. Cancel any month with 30 days' notice.</p>\n      </div>\n    </div>\n  </div>\n</section>",
+                "_title": "How it works"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "d2b17d5",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Why partner with us?"
+      },
+      "elements": [
+        {
+          "id": "3c45c29",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "6de9814",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<section class=\"py-section-padding px-gutter bg-surface-container-low\">\n  <div class=\"max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center\">\n    <div>\n      <h2 class=\"font-h2 text-h2 text-primary mb-stack-md\">Why partner with us?</h2>\n      <p class=\"font-body-lg text-secondary mb-stack-lg\">\n        Owning a car in Montenegro is expensive \u2014 insurance, technical inspection, parking, the road tax. Monte Club turns that cost centre into a revenue stream while we shoulder the operational work.\n      </p>\n      <ul class=\"space-y-4\">\n\n        <li class=\"flex gap-4 items-start\">\n          <span class=\"material-symbols-outlined text-primary bg-secondary-container p-2 rounded-lg flex-shrink-0\">shield</span>\n          <div>\n            <p class=\"font-label-bold text-primary text-base\">Full insurance, on us</p>\n            <p class=\"text-body-sm text-secondary\">Comprehensive coverage including zero-excess collision and theft \u2014 at no cost to you.</p>\n          </div>\n        </li>\n        <li class=\"flex gap-4 items-start\">\n          <span class=\"material-symbols-outlined text-primary bg-secondary-container p-2 rounded-lg flex-shrink-0\">local_car_wash</span>\n          <div>\n            <p class=\"font-label-bold text-primary text-base\">Cleaning &amp; maintenance</p>\n            <p class=\"text-body-sm text-secondary\">Every return: deep clean, fluids check, tyre pressure. Service intervals tracked and paid for.</p>\n          </div>\n        </li>\n        <li class=\"flex gap-4 items-start\">\n          <span class=\"material-symbols-outlined text-primary bg-secondary-container p-2 rounded-lg flex-shrink-0\">euro_symbol</span>\n          <div>\n            <p class=\"font-label-bold text-primary text-base\">Transparent monthly payouts</p>\n            <p class=\"text-body-sm text-secondary\">65/35 revenue share, detailed statement, paid on the 5th \u2014 no withholdings, no hidden deductions.</p>\n          </div>\n        </li>\n        <li class=\"flex gap-4 items-start\">\n          <span class=\"material-symbols-outlined text-primary bg-secondary-container p-2 rounded-lg flex-shrink-0\">calendar_month</span>\n          <div>\n            <p class=\"font-label-bold text-primary text-base\">Block your own dates</p>\n            <p class=\"text-body-sm text-secondary\">Need the car for a weekend? Block dates in the partner portal and the listing pauses automatically.</p>\n          </div>\n        </li>\n        <li class=\"flex gap-4 items-start\">\n          <span class=\"material-symbols-outlined text-primary bg-secondary-container p-2 rounded-lg flex-shrink-0\">verified_user</span>\n          <div>\n            <p class=\"font-label-bold text-primary text-base\">Verified, vetted renters</p>\n            <p class=\"text-body-sm text-secondary\">Every driver passes our document and credit-card checks before they get the keys to your vehicle.</p>\n          </div>\n        </li>\n      </ul>\n    </div>\n    <div class=\"bg-primary text-on-primary rounded-2xl p-10 shadow-2xl\">\n      <span class=\"text-body-sm uppercase tracking-widest text-tertiary-fixed-dim\">Indicative monthly earnings</span>\n      <p class=\"font-price-display text-[64px] leading-none text-white font-bold mt-2 mb-stack-md\">\u20ac450\u2013950</p>\n      <p class=\"text-white/80 mb-stack-lg\">Per economy-segment car, per month, based on 2024 partner statements. Premium and SUV categories earn more.</p>\n      <div class=\"grid grid-cols-3 gap-4 text-center\">\n        <div class=\"bg-white/10 rounded-lg p-4\">\n          <p class=\"text-tertiary-fixed-dim font-h3 text-h3\">82%</p>\n          <p class=\"text-body-sm text-white/75 mt-1\">Average occupancy May\u2013Oct</p>\n        </div>\n        <div class=\"bg-white/10 rounded-lg p-4\">\n          <p class=\"text-tertiary-fixed-dim font-h3 text-h3\">\u20ac0</p>\n          <p class=\"text-body-sm text-white/75 mt-1\">Up-front cost to join</p>\n        </div>\n        <div class=\"bg-white/10 rounded-lg p-4\">\n          <p class=\"text-tertiary-fixed-dim font-h3 text-h3\">30d</p>\n          <p class=\"text-body-sm text-white/75 mt-1\">Notice to cancel, no penalty</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+                "_title": "Why partner with us?"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "e59a9e4",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Apply now"
+      },
+      "elements": [
+        {
+          "id": "bf97b80",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "f8696cf",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<section class=\"py-section-padding px-gutter\">\n  <div class=\"max-w-3xl mx-auto\">\n    <div class=\"text-center mb-stack-lg\">\n      <h2 class=\"font-h2 text-h2 text-primary mb-stack-sm\">Apply now</h2>\n      <p class=\"text-secondary font-body-md\">Takes about 3 minutes. We respond within 48 hours.</p>\n    </div>\n    <form class=\"bg-white p-8 rounded-xl shadow-ambient flex flex-col gap-4 border border-outline-variant/30\">\n      <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\">\n        <label class=\"flex flex-col gap-2\">\n          <span class=\"font-label-bold text-on-surface-variant text-sm\">Full name</span>\n          <input type=\"text\" required class=\"h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary\"/>\n        </label>\n        <label class=\"flex flex-col gap-2\">\n          <span class=\"font-label-bold text-on-surface-variant text-sm\">Phone (with country code)</span>\n          <input type=\"tel\" required placeholder=\"+382 ...\" class=\"h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary\"/>\n        </label>\n      </div>\n      <label class=\"flex flex-col gap-2\">\n        <span class=\"font-label-bold text-on-surface-variant text-sm\">Email</span>\n        <input type=\"email\" required class=\"h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary\"/>\n      </label>\n      <div class=\"grid grid-cols-1 md:grid-cols-3 gap-4\">\n        <label class=\"flex flex-col gap-2\">\n          <span class=\"font-label-bold text-on-surface-variant text-sm\">Car make</span>\n          <input type=\"text\" required placeholder=\"e.g. Volkswagen\" class=\"h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary\"/>\n        </label>\n        <label class=\"flex flex-col gap-2\">\n          <span class=\"font-label-bold text-on-surface-variant text-sm\">Car model</span>\n          <input type=\"text\" required placeholder=\"e.g. Polo\" class=\"h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary\"/>\n        </label>\n        <label class=\"flex flex-col gap-2\">\n          <span class=\"font-label-bold text-on-surface-variant text-sm\">Year</span>\n          <input type=\"number\" min=\"2010\" max=\"2025\" required class=\"h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary\"/>\n        </label>\n      </div>\n      <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\">\n        <label class=\"flex flex-col gap-2\">\n          <span class=\"font-label-bold text-on-surface-variant text-sm\">Pick-up city</span>\n          <select class=\"h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary bg-white\">\n            <option>Podgorica</option>\n            <option>Tivat</option>\n            <option>Budva</option>\n            <option>Kotor</option>\n            <option>Bar</option>\n            <option>Herceg Novi</option>\n          </select>\n        </label>\n        <label class=\"flex flex-col gap-2\">\n          <span class=\"font-label-bold text-on-surface-variant text-sm\">Approx. days available per month</span>\n          <input type=\"number\" min=\"1\" max=\"31\" placeholder=\"20\" class=\"h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary\"/>\n        </label>\n      </div>\n      <label class=\"flex flex-col gap-2\">\n        <span class=\"font-label-bold text-on-surface-variant text-sm\">Anything else we should know?</span>\n        <textarea rows=\"4\" class=\"px-4 py-3 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary resize-y\"></textarea>\n      </label>\n      <label class=\"flex items-start gap-3 text-body-sm text-secondary\">\n        <input type=\"checkbox\" required class=\"mt-1 rounded border-outline-variant\"/>\n        <span>I confirm I am the legal owner of this vehicle and agree to the Monte Club partner terms.</span>\n      </label>\n      <button type=\"submit\" class=\"bg-[#FF5722] hover:bg-[#E64A19] text-white font-label-bold h-14 rounded-lg shadow-lg uppercase tracking-wide\">\n        Submit application\n      </button>\n    </form>\n  </div>\n</section>",
+                "_title": "Apply now"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "937c909",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Footer"
+      },
+      "elements": [
+        {
+          "id": "7a705d4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "3019f79",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<footer class=\"w-full py-section-padding px-gutter flex flex-col items-center gap-stack-lg bg-primary text-on-primary\">\n  <div class=\"max-w-container-max w-full flex flex-col md:flex-row justify-between items-start gap-12 border-b border-on-primary/10 pb-12\">\n    <div class=\"flex flex-col gap-4 max-w-[320px]\">\n      <span class=\"font-h3 text-h3 font-bold text-on-primary\">MontenegroDrive</span>\n      <p class=\"text-body-sm opacity-80\">Premium car rental in Montenegro for business travelers and tourists. We guarantee safety, quality, and the best prices.</p>\n    </div>\n    <div class=\"grid grid-cols-2 md:grid-cols-4 gap-12\">\n      <div class=\"flex flex-col gap-4\">\n        <h5 class=\"font-label-bold text-tertiary-fixed uppercase tracking-wider\">Explore</h5>\n        <ul class=\"flex flex-col gap-2 opacity-80 text-body-sm\">\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"search.html\">Fleet</a></li>\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"locations.html\">Locations</a></li>\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"travel-guide.html\">Travel Guide</a></li>\n        </ul>\n      </div>\n      <div class=\"flex flex-col gap-4\">\n        <h5 class=\"font-label-bold text-tertiary-fixed uppercase tracking-wider\">Support</h5>\n        <ul class=\"flex flex-col gap-2 opacity-80 text-body-sm\">\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"support.html\">Contact Us</a></li>\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"support.html#faq\">FAQ</a></li>\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"manage-booking.html\">Manage Booking</a></li>\n        </ul>\n      </div>\n      <div class=\"flex flex-col gap-4\">\n        <h5 class=\"font-label-bold text-tertiary-fixed uppercase tracking-wider\">Monte Club</h5>\n        <p class=\"text-body-sm opacity-80\">Partner with us to grow your car rental business in the region. Do you have a car that you don't use and want to earn money?</p>\n        <a class=\"border border-on-primary px-5 py-2 rounded-lg font-label-bold hover:bg-on-primary hover:text-primary transition-all w-fit text-center text-body-sm\" href=\"monte-club.html\">Join Monte Club</a>\n      </div>\n      <div class=\"flex flex-col gap-4\">\n        <h5 class=\"font-label-bold text-tertiary-fixed uppercase tracking-wider\">Legal</h5>\n        <ul class=\"flex flex-col gap-2 opacity-80 text-body-sm\">\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"legal.html#privacy\">Privacy Policy</a></li>\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"legal.html#terms\">Terms of Service</a></li>\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"legal.html#cookies\">Cookie Policy</a></li>\n        </ul>\n      </div>\n    </div>\n  </div>\n  <div class=\"flex flex-col md:flex-row justify-between w-full max-w-container-max pt-2 opacity-70 text-body-sm gap-4\">\n    <p>\u00a9 2024 MontenegroDrive Car Rentals. All rights reserved.</p>\n    <div class=\"flex gap-6 items-center\">\n      <a href=\"#\" aria-label=\"Facebook\" class=\"hover:text-secondary-fixed\"><span class=\"material-symbols-outlined\">public</span></a>\n      <a href=\"#\" aria-label=\"Instagram\" class=\"hover:text-secondary-fixed\"><span class=\"material-symbols-outlined\">photo_camera</span></a>\n      <a href=\"#\" aria-label=\"Share\" class=\"hover:text-secondary-fixed\"><span class=\"material-symbols-outlined\">share</span></a>\n    </div>\n  </div>\n</footer>",
+                "_title": "Footer"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": {
+    "template": "elementor_canvas",
+    "background_background": "classic",
+    "background_color": "#f7f9fb"
+  }
+}

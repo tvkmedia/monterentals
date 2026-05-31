@@ -1,0 +1,167 @@
+/*
+Theme Name: MontenegroDrive
+Theme URI: https://example.com/montenegrodrive
+Author: MontenegroDrive
+Author URI: https://example.com
+Description: Premium car-rental theme for Montenegro travel agencies. Built for Elementor Pro with the "Montenegro Elite Travel" design system: Adriatic Blue + Vibrant Orange, Plus Jakarta Sans + Inter, generous whitespace, and trustworthy corporate feel. Includes three importable Elementor templates (Home, Search Results, Travel Guide).
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 7.4
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: montenegrodrive
+Tags: travel, car-rental, elementor, full-site-editing, custom-colors, custom-logo, threaded-comments
+*/
+
+/* ==========================================================================
+   Design tokens — exposed as CSS variables so Elementor's Global Styles
+   and any custom CSS in widgets can reference them directly.
+   See assets/css/theme-tokens.css for the full token map.
+   ========================================================================== */
+
+:root {
+    /* Primary palette — Adriatic Blue */
+    --md-primary: #001835;
+    --md-primary-container: #0f2d52;
+    --md-on-primary: #ffffff;
+    --md-on-primary-container: #7b95c0;
+    --md-primary-fixed: #d5e3ff;
+    --md-primary-fixed-dim: #adc8f5;
+
+    /* Secondary palette — Sky Blue */
+    --md-secondary: #526069;
+    --md-secondary-container: #d3e2ed;
+    --md-on-secondary: #ffffff;
+    --md-on-secondary-container: #56656e;
+    --md-secondary-fixed: #d6e5ef;
+    --md-secondary-fixed-dim: #bac9d3;
+
+    /* Tertiary — Warm accents */
+    --md-tertiary: #291300;
+    --md-tertiary-container: #472400;
+    --md-tertiary-fixed: #ffdcc1;
+    --md-tertiary-fixed-dim: #f6ba88;
+
+    /* Conversion accent — Vibrant Orange */
+    --md-brand-accent: #FF5722;
+    --md-brand-accent-hover: #E64A19;
+    --md-brand-accent-soft: #FF7E1D;
+
+    /* Neutrals */
+    --md-background: #f7f9fb;
+    --md-surface: #f7f9fb;
+    --md-surface-container: #eceef0;
+    --md-surface-container-low: #f2f4f6;
+    --md-surface-container-lowest: #ffffff;
+    --md-surface-container-high: #e6e8ea;
+    --md-surface-container-highest: #e0e3e5;
+    --md-on-surface: #191c1e;
+    --md-on-surface-variant: #43474e;
+    --md-on-background: #191c1e;
+    --md-outline: #74777f;
+    --md-outline-variant: #c4c6cf;
+    --md-error: #ba1a1a;
+
+    /* Spacing scale */
+    --md-stack-sm: 8px;
+    --md-stack-md: 16px;
+    --md-stack-lg: 32px;
+    --md-gutter: 24px;
+    --md-section-padding: 80px;
+    --md-container-max: 1280px;
+
+    /* Radii */
+    --md-radius-sm: 0.25rem;
+    --md-radius: 0.5rem;
+    --md-radius-md: 0.75rem;
+    --md-radius-lg: 1rem;
+    --md-radius-xl: 1.5rem;
+
+    /* Elevation */
+    --md-shadow-ambient: 0 4px 20px rgba(15, 45, 82, 0.08);
+}
+
+/* WordPress base resets so Elementor's canvas isn't fighting any theme cruft */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--md-on-background);
+    background: var(--md-background);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 700;
+    color: var(--md-primary);
+    margin: 0;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--md-primary); text-decoration: none; }
+a:hover { color: var(--md-primary-container); }
+
+/* WordPress alignment classes (required for theme review compliance) */
+.alignleft { float: left; margin-right: 1em; }
+.alignright { float: right; margin-left: 1em; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignwide { max-width: 1200px; margin-left: auto; margin-right: auto; }
+.alignfull { width: 100%; }
+
+/* Screen reader text — required */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    -webkit-clip-path: none;
+    clip-path: none;
+    color: var(--md-primary);
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+
+/* Skip link */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 100000;
+}
+.skip-link:focus {
+    left: 6px;
+    top: 7px;
+}
+
+/* Material Symbols utility — needed when widgets use icon spans */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+}

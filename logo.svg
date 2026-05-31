@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" role="img" aria-label="MontenegroDrive">
+  <!-- M badge -->
+  <rect x="0" y="4" width="40" height="40" rx="8" fill="#001835"/>
+  <text x="20" y="34" font-family="'Plus Jakarta Sans', system-ui, sans-serif"
+        font-size="28" font-weight="800" text-anchor="middle" fill="#FF5722">M</text>
+  <!-- Wordmark -->
+  <text x="50" y="32" font-family="'Plus Jakarta Sans', system-ui, sans-serif"
+        font-size="22" font-weight="700" fill="#001835" letter-spacing="-0.5">MontenegroDrive</text>
+</svg>

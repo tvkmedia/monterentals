@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Driving in Montenegro: What You Need to Know — MontenegroDrive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "secondary-container":"#d3e2ed","on-secondary":"#ffffff","inverse-on-surface":"#eff1f3",
+        "surface-variant":"#e0e3e5","background":"#f7f9fb","surface-tint":"#455f87",
+        "on-surface-variant":"#43474e","secondary-fixed":"#d6e5ef","primary-fixed-dim":"#adc8f5",
+        "surface-container-low":"#f2f4f6","surface-dim":"#d8dadc","on-tertiary-fixed":"#2e1500",
+        "on-primary-fixed":"#001b3b","on-error":"#ffffff","on-tertiary":"#ffffff",
+        "on-tertiary-fixed-variant":"#663d16","on-primary-container":"#7b95c0",
+        "on-secondary-fixed":"#0f1d25","tertiary-container":"#472400","error":"#ba1a1a",
+        "surface":"#f7f9fb","on-primary-fixed-variant":"#2d476e","outline-variant":"#c4c6cf",
+        "on-surface":"#191c1e","outline":"#74777f","surface-container":"#eceef0",
+        "surface-bright":"#f7f9fb","on-background":"#191c1e","tertiary":"#291300",
+        "primary-fixed":"#d5e3ff","inverse-primary":"#adc8f5","on-tertiary-container":"#bf895b",
+        "on-secondary-container":"#56656e","surface-container-highest":"#e0e3e5",
+        "surface-container-high":"#e6e8ea","secondary":"#526069","secondary-fixed-dim":"#bac9d3",
+        "on-error-container":"#93000a","tertiary-fixed-dim":"#f6ba88","tertiary-fixed":"#ffdcc1",
+        "primary":"#001835","inverse-surface":"#2d3133","on-primary":"#ffffff",
+        "error-container":"#ffdad6","primary-container":"#0f2d52",
+        "surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#3b4951",
+        "brand-accent":"#FF5722"
+      },
+      borderRadius: { DEFAULT:"0.25rem", lg:"0.5rem", xl:"0.75rem", "2xl":"1rem", "3xl":"1.5rem", full:"9999px" },
+      spacing: {
+        "gutter":"24px","margin-mobile":"16px","stack-sm":"8px","stack-lg":"32px",
+        "container-max":"1280px","stack-md":"16px","section-padding":"80px"
+      },
+      fontFamily: {
+        "body-md":["Inter"],"body-sm":["Inter"],"label-bold":["Inter"],
+        "h2":["Plus Jakarta Sans"],"body-lg":["Inter"],"h3":["Plus Jakarta Sans"],
+        "h1":["Plus Jakarta Sans"],"price-display":["Plus Jakarta Sans"]
+      },
+      fontSize: {
+        "body-md":["16px",{ lineHeight:"1.5", fontWeight:"400" }],
+        "body-sm":["14px",{ lineHeight:"1.5", fontWeight:"400" }],
+        "label-bold":["14px",{ lineHeight:"1.2", fontWeight:"600" }],
+        "h2":["32px",{ lineHeight:"1.3", fontWeight:"700" }],
+        "body-lg":["18px",{ lineHeight:"1.6", fontWeight:"400" }],
+        "h3":["24px",{ lineHeight:"1.4", fontWeight:"600" }],
+        "h1":["48px",{ lineHeight:"1.2", letterSpacing:"-0.02em", fontWeight:"700" }],
+        "price-display":["28px",{ lineHeight:"1", letterSpacing:"-0.01em", fontWeight:"700" }]
+      }
+    }
+  }
+};
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+.shadow-ambient { box-shadow: 0 4px 20px rgba(15, 45, 82, 0.08); }
+</style>
+<!-- BEGIN SEO -->
+<meta name="description" content="Licence requirements, speed limits, alcohol policy, insurance, required equipment, and what to do if you have an accident."/>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"/>
+<meta name="theme-color" content="#001835"/>
+<link rel="canonical" href="https://montenegrodrive.com/blog/driving-in-montenegro/"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="MontenegroDrive"/>
+<meta property="og:title" content="Driving in Montenegro — Rules, Speed Limits & Safety Guide"/>
+<meta property="og:description" content="Licence requirements, speed limits, alcohol policy, insurance, required equipment, and what to do if you have an accident."/>
+<meta property="og:url" content="https://montenegrodrive.com/blog/driving-in-montenegro/"/>
+<meta property="og:image" content="https://montenegrodrive.com/screenshot.png"/>
+<meta property="og:locale" content="en_US"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Driving in Montenegro — Rules, Speed Limits & Safety Guide"/>
+<meta name="twitter:description" content="Licence requirements, speed limits, alcohol policy, insurance, required equipment, and what to do if you have an accident."/>
+<meta name="twitter:image" content="https://montenegrodrive.com/screenshot.png"/>
+
+<!-- Favicon (SVG with raster fallback) -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon.svg"/>
+<link rel="mask-icon" href="favicon.svg" color="#001835"/>
+<!-- END SEO -->
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface shadow-sm">
+  <div class="max-w-container-max mx-auto flex justify-between items-center px-gutter py-4">
+    <div class="flex items-center gap-10">
+      <a href="index.html" class="flex items-center gap-3 group" aria-label="MontenegroDrive — Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" class="w-10 h-10 flex-shrink-0 transition-transform group-hover:scale-105" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#001835"/>
+          <text x="20" y="29" font-family="'Plus Jakarta Sans', system-ui, sans-serif"
+                font-size="26" font-weight="800" text-anchor="middle" fill="#FF5722">M</text>
+        </svg>
+        <span class="font-h2 text-h2 font-bold text-primary leading-none">MontenegroDrive</span>
+      </a>
+      <nav class="hidden md:flex gap-6">
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="search.html">Fleet</a>
+        <a class="text-primary font-label-bold border-b-2 border-primary transition-all duration-200" href="travel-guide.html">Travel Guide</a>
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="search.html">Rentals</a>
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="locations.html">Locations</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4">
+      <a class="hidden md:block text-secondary font-label-bold hover:text-primary transition-colors" href="support.html">Support</a>
+      <a class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-bold hover:shadow-lg transition-all" href="manage-booking.html">Manage Booking</a>
+    </div>
+  </div>
+</header>
+<main class="pt-[72px]">
+
+<article>
+  <section class="relative h-[520px] flex items-end overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img class="w-full h-full object-cover" alt="" src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2000&auto=format&fit=crop"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/40 to-primary/10"></div>
+    </div>
+    <div class="relative z-10 max-w-container-max mx-auto px-gutter w-full pb-stack-lg">
+      <span class="inline-block bg-secondary-container text-on-secondary-container px-3 py-1 rounded-md text-body-sm font-label-bold uppercase tracking-wider mb-stack-md">Safety guide · 6 min read</span>
+      <h1 class="font-h1 text-h1 text-white max-w-4xl mb-stack-md drop-shadow-md">Driving in Montenegro: What You Need to Know</h1>
+      <p class="text-white/85 font-body-lg max-w-2xl">The rules of the road, in plain English. What the police will and won't fine you for, and what to do if something goes wrong.</p>
+      <div class="flex items-center gap-6 mt-stack-md text-white/80 text-body-sm">
+        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">edit</span> By MontenegroDrive Editorial</span>
+        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">schedule</span> 8 min read</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-3xl mx-auto px-gutter py-section-padding">
+    <a href="travel-guide.html" class="text-primary font-label-bold flex items-center gap-2 mb-stack-lg hover:gap-3 transition-all">
+      <span class="material-symbols-outlined text-[18px]">arrow_back</span> Back to Travel Guide
+    </a>
+    <p class="text-body-lg text-on-surface-variant leading-relaxed mb-stack-md">Montenegro drives on the right. Most rules will feel familiar to anyone who has driven in mainland Europe. There are, however, a few local quirks that catch people out — and a handful of fines that can spoil a trip.</p><h2 class="font-h2 text-h2 text-primary mt-stack-lg mb-stack-md">Licence requirements</h2><ul class="space-y-3 mb-stack-md"><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">EU/EEA/UK licence: valid as-is, no IDP required.</span></li><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Most other licences: bring your national licence AND an International Driving Permit (IDP). The IDP must be the 1949 Geneva or 1968 Vienna convention type.</span></li><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Minimum driving age: 18. Most rental categories require 21+ with one year of licence history; luxury categories require 25+.</span></li></ul><h2 class="font-h2 text-h2 text-primary mt-stack-lg mb-stack-md">Speed limits</h2><ul class="space-y-3 mb-stack-md"><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Urban: 50 km/h (sometimes signed 40 in residential zones).</span></li><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Open road: 80 km/h.</span></li><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Expressway (M-2 Podgorica–Mateševo): 100 km/h.</span></li><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Adriatic Highway (E-80): 80 km/h except where signed otherwise.</span></li></ul><p class="text-body-lg text-on-surface-variant leading-relaxed mb-stack-md">Speed cameras are common on the E-80 and around Podgorica. Fines start at €40 for up to 20 km/h over, rising to €200 + court summons above that.</p><h2 class="font-h2 text-h2 text-primary mt-stack-lg mb-stack-md">Alcohol policy</h2><p class="text-body-lg text-on-surface-variant leading-relaxed mb-stack-md">Blood alcohol limit is 0.03% — effectively a one-drink limit. For new drivers (licence under 2 years) and professional drivers, the limit is zero. Random roadside breath tests are routine on Friday and Saturday nights.</p><h2 class="font-h2 text-h2 text-primary mt-stack-lg mb-stack-md">Required equipment</h2><ul class="space-y-3 mb-stack-md"><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Reflective vest (one per passenger).</span></li><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Warning triangle.</span></li><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">First-aid kit.</span></li><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Spare bulb set.</span></li><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Tow rope.</span></li><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Snow chains (Nov 15 – Apr 15 if travelling above 700 m, regardless of road conditions).</span></li></ul><p class="text-body-lg text-on-surface-variant leading-relaxed mb-stack-md">All MontenegroDrive vehicles come with the full required kit in the boot. Check it's there before driving off.</p><h2 class="font-h2 text-h2 text-primary mt-stack-lg mb-stack-md">Insurance &amp; the Green Card</h2><p class="text-body-lg text-on-surface-variant leading-relaxed mb-stack-md">Your rental includes mandatory third-party (TPL) insurance and a Collision Damage Waiver. The Green Card is mandatory for cross-border driving in Croatia, BiH, Albania, Slovenia and onwards — we include it free of charge if you tell us at pick-up. Kosovo is excluded entirely; you must rent there separately.</p><h2 class="font-h2 text-h2 text-primary mt-stack-lg mb-stack-md">Road conditions</h2><p class="text-body-lg text-on-surface-variant leading-relaxed mb-stack-md">The coastal Adriatic Highway and the new M-2 Bar–Boljare expressway (currently open Podgorica–Mateševo) are smooth two- and three-lane highways. The Lov&#263;en road, the Durmitor Ring and most roads above 800 m are narrow, single-lane and locally maintained. After winter, expect potholes until late May.</p><h2 class="font-h2 text-h2 text-primary mt-stack-lg mb-stack-md">What to do if you have an accident</h2><ul class="space-y-3 mb-stack-md"><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Stop, switch hazards on, deploy the warning triangle 50 m back.</span></li><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Photograph everything — both vehicles, plates, surroundings, damage close-ups.</span></li><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Call police (122) if anyone is injured or vehicles can't move under their own power.</span></li><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Exchange details with the other driver: full name, address, licence number, insurance.</span></li><li class="flex gap-3 items-start"><span class="material-symbols-outlined text-primary mt-1">check_circle</span><span class="text-body-md text-on-surface-variant leading-relaxed">Call us on +382 20 123 456 — we'll coordinate next steps, including a replacement vehicle if needed.</span></li></ul>
+    <blockquote class="border-l-4 border-brand-accent bg-secondary-container/30 p-6 my-stack-lg italic text-h3 text-[20px] text-primary">
+      90% of customer drama on Montenegrin roads is parking fines in old towns. Read the blue/yellow line colour code before you walk away from the car.
+      
+    </blockquote>
+
+    <div class="mt-stack-lg pt-stack-lg border-t border-outline-variant/40 flex flex-col sm:flex-row justify-between items-start gap-4">
+      <div>
+        <p class="font-label-bold text-primary mb-1">Ready to drive it yourself?</p>
+        <p class="text-body-sm text-secondary">Get a car at any of our 9 pick-up locations across Montenegro.</p>
+      </div>
+      <a href="search.html" class="bg-[#FF5722] hover:bg-[#E64A19] text-white font-label-bold px-6 py-3 rounded-lg shadow-lg">Find a car</a>
+    </div>
+  </div>
+
+  <section class="py-section-padding px-gutter bg-surface-container-low">
+    <div class="max-w-container-max mx-auto">
+      <h2 class="font-h2 text-h2 text-primary mb-stack-lg">Continue reading</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <a href="article-road-trip-tips.html" class="group bg-white rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 hover:shadow-md transition-all block">
+          <div class="aspect-video overflow-hidden"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="" src="https://images.unsplash.com/photo-1502301103665-0b95cc738daf?q=80&w=1200&auto=format&fit=crop"/></div>
+          <div class="p-5">
+            <h4 class="font-h3 text-[18px] text-primary mb-2">10 Tips for Your Montenegro Road Trip</h4>
+            <p class="text-body-sm text-secondary">Everything from gas stations to viewpoints.</p>
+          </div>
+        </a>
+        <a href="article-panoramic-routes.html" class="group bg-white rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 hover:shadow-md transition-all block">
+          <div class="aspect-video overflow-hidden"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="" src="https://images.unsplash.com/photo-1566127992631-137a642a90f4?q=80&w=1200&auto=format&fit=crop"/></div>
+          <div class="p-5">
+            <h4 class="font-h3 text-[18px] text-primary mb-2">Best Panoramic Routes in Europe</h4>
+            <p class="text-body-sm text-secondary">Eight scenic drives that earn the cliché.</p>
+          </div>
+        </a>
+        <a href="article-sinjajevina.html" class="group bg-white rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 hover:shadow-md transition-all block">
+          <div class="aspect-video overflow-hidden"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="" src="https://images.unsplash.com/photo-1486494427891-2bcfb5b8f1ab?q=80&w=1200&auto=format&fit=crop"/></div>
+          <div class="p-5">
+            <h4 class="font-h3 text-[18px] text-primary mb-2">The Sinjajevina Highlands</h4>
+            <p class="text-body-sm text-secondary">Europe's second-largest mountain pasture.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</article>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-section-padding px-gutter flex flex-col items-center gap-stack-lg bg-primary text-on-primary">
+  <div class="max-w-container-max w-full flex flex-col md:flex-row justify-between items-start gap-12 border-b border-on-primary/10 pb-12">
+    <div class="flex flex-col gap-4 max-w-[320px]">
+      <span class="font-h3 text-h3 font-bold text-on-primary">MontenegroDrive</span>
+      <p class="text-body-sm opacity-80">Premium car rental in Montenegro for business travelers and tourists. We guarantee safety, quality, and the best prices.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed uppercase tracking-wider">Explore</h5>
+        <ul class="flex flex-col gap-2 opacity-80 text-body-sm">
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="search.html">Fleet</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="locations.html">Locations</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="travel-guide.html">Travel Guide</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed uppercase tracking-wider">Support</h5>
+        <ul class="flex flex-col gap-2 opacity-80 text-body-sm">
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="support.html">Contact Us</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="support.html#faq">FAQ</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="manage-booking.html">Manage Booking</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed uppercase tracking-wider">Monte Club</h5>
+        <p class="text-body-sm opacity-80">Partner with us to grow your car rental business in the region. Do you have a car that you don't use and want to earn money?</p>
+        <a class="border border-on-primary px-5 py-2 rounded-lg font-label-bold hover:bg-on-primary hover:text-primary transition-all w-fit text-center text-body-sm" href="monte-club.html">Join Monte Club</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed uppercase tracking-wider">Legal</h5>
+        <ul class="flex flex-col gap-2 opacity-80 text-body-sm">
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="legal.html#privacy">Privacy Policy</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="legal.html#terms">Terms of Service</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="legal.html#cookies">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row justify-between w-full max-w-container-max pt-2 opacity-70 text-body-sm gap-4">
+    <p>© 2024 MontenegroDrive Car Rentals. All rights reserved.</p>
+    <div class="flex gap-6 items-center">
+      <a href="#" aria-label="Facebook" class="hover:text-secondary-fixed"><span class="material-symbols-outlined">public</span></a>
+      <a href="#" aria-label="Instagram" class="hover:text-secondary-fixed"><span class="material-symbols-outlined">photo_camera</span></a>
+      <a href="#" aria-label="Share" class="hover:text-secondary-fixed"><span class="material-symbols-outlined">share</span></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

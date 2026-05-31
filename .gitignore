@@ -1,0 +1,30 @@
+# Build artifacts — regenerated from sources
+montenegrodrive.zip
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.python-version
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local environment overrides
+.env
+.env.local

@@ -1,0 +1,192 @@
+{
+  "version": "0.4",
+  "title": "MontenegroDrive \u2014 Manage Booking",
+  "type": "page",
+  "content": [
+    {
+      "id": "5bc1914",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Header / Navigation"
+      },
+      "elements": [
+        {
+          "id": "4a85f43",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "d54f1d4",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<header class=\"fixed top-0 w-full z-50 bg-surface shadow-sm\">\n  <div class=\"max-w-container-max mx-auto flex justify-between items-center px-gutter py-4\">\n    <div class=\"flex items-center gap-10\">\n      <a href=\"index.html\" class=\"flex items-center gap-3 group\" aria-label=\"MontenegroDrive \u2014 Home\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 40 40\" class=\"w-10 h-10 flex-shrink-0 transition-transform group-hover:scale-105\" aria-hidden=\"true\">\n          <rect width=\"40\" height=\"40\" rx=\"8\" fill=\"#001835\"/>\n          <text x=\"20\" y=\"29\" font-family=\"'Plus Jakarta Sans', system-ui, sans-serif\" font-size=\"26\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#FF5722\">M</text>\n        </svg>\n        <span class=\"font-h2 text-h2 font-bold text-primary leading-none\">MontenegroDrive</span>\n      </a>\n      <nav class=\"hidden md:flex gap-6\">\n        <a class=\"text-secondary font-body-md hover:text-primary-container transition-colors\" href=\"search.html\">Fleet</a>\n        <a class=\"text-secondary font-body-md hover:text-primary-container transition-colors\" href=\"travel-guide.html\">Travel Guide</a>\n        <a class=\"text-secondary font-body-md hover:text-primary-container transition-colors\" href=\"search.html\">Rentals</a>\n        <a class=\"text-secondary font-body-md hover:text-primary-container transition-colors\" href=\"locations.html\">Locations</a>\n      </nav>\n    </div>\n    <div class=\"flex items-center gap-4\">\n      <a class=\"hidden md:block text-secondary font-label-bold hover:text-primary transition-colors\" href=\"support.html\">Support</a>\n      <a class=\"bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-bold hover:shadow-lg transition-all\" href=\"manage-booking.html\">Manage Booking</a>\n    </div>\n  </div>\n</header>",
+                "_title": "Header / Navigation"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "2b3a476",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Manage your booking in seconds"
+      },
+      "elements": [
+        {
+          "id": "50ae871",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "7e7b87d",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<section class=\"py-section-padding px-gutter min-h-[calc(100vh-72px)] bg-gradient-to-br from-primary via-primary-container to-primary\">\n  <div class=\"max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center\">\n\n    <!-- Left: marketing copy -->\n    <div class=\"text-white\">\n      <span class=\"inline-block bg-white/15 backdrop-blur-sm px-4 py-1.5 rounded-full font-label-bold mb-stack-md text-white/90 border border-white/20\">\n        Self-service portal\n      </span>\n      <h1 class=\"font-h1 text-h1 mb-stack-md drop-shadow-md\">Manage your booking in seconds</h1>\n      <p class=\"font-body-lg text-body-lg text-white/85 mb-stack-lg leading-relaxed\">\n        Sign in with the email you booked under and your booking number to change dates, upgrade your vehicle, add extras, request an invoice, or cancel.\n      </p>\n      <ul class=\"flex flex-col gap-stack-md\">\n        <li class=\"flex items-start gap-4\">\n          <span class=\"material-symbols-outlined text-tertiary-fixed-dim mt-1\">edit_calendar</span>\n          <div>\n            <p class=\"font-label-bold\">Change dates &amp; pick-up location</p>\n            <p class=\"text-body-sm text-white/75\">Free until 48 hours before pick-up.</p>\n          </div>\n        </li>\n        <li class=\"flex items-start gap-4\">\n          <span class=\"material-symbols-outlined text-tertiary-fixed-dim mt-1\">upgrade</span>\n          <div>\n            <p class=\"font-label-bold\">Upgrade your vehicle</p>\n            <p class=\"text-body-sm text-white/75\">Pay only the difference if availability allows.</p>\n          </div>\n        </li>\n        <li class=\"flex items-start gap-4\">\n          <span class=\"material-symbols-outlined text-tertiary-fixed-dim mt-1\">receipt_long</span>\n          <div>\n            <p class=\"font-label-bold\">Download your VAT invoice</p>\n            <p class=\"text-body-sm text-white/75\">Issued from our Podgorica office.</p>\n          </div>\n        </li>\n        <li class=\"flex items-start gap-4\">\n          <span class=\"material-symbols-outlined text-tertiary-fixed-dim mt-1\">cancel</span>\n          <div>\n            <p class=\"font-label-bold\">Cancel for a full refund</p>\n            <p class=\"text-body-sm text-white/75\">No questions asked outside the 48h window.</p>\n          </div>\n        </li>\n      </ul>\n    </div>\n\n    <!-- Right: login card -->\n    <div class=\"bg-white rounded-2xl shadow-2xl p-8 md:p-10\">\n      <div class=\"flex gap-2 mb-stack-lg p-1 bg-surface-container-low rounded-lg\">\n        <button id=\"tab-login\" type=\"button\" class=\"flex-1 py-2.5 rounded-md bg-primary text-on-primary font-label-bold transition-all\">Sign in</button>\n        <button id=\"tab-lookup\" type=\"button\" class=\"flex-1 py-2.5 rounded-md text-secondary font-label-bold hover:bg-white transition-all\">Look up by ref</button>\n      </div>\n\n      <!-- Sign-in form -->\n      <form id=\"form-login\" class=\"flex flex-col gap-4\">\n        <label class=\"flex flex-col gap-2\">\n          <span class=\"font-label-bold text-on-surface-variant text-sm\">Email address</span>\n          <input type=\"email\" required placeholder=\"you@example.com\" class=\"h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary\"/>\n        </label>\n        <label class=\"flex flex-col gap-2\">\n          <span class=\"font-label-bold text-on-surface-variant text-sm\">Password</span>\n          <input type=\"password\" required placeholder=\"\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\" class=\"h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary\"/>\n        </label>\n        <div class=\"flex justify-between items-center text-body-sm\">\n          <label class=\"flex items-center gap-2 text-secondary\"><input type=\"checkbox\" class=\"rounded border-outline-variant\"/> Remember me</label>\n          <a href=\"support.html\" class=\"text-primary font-label-bold\">Forgot password?</a>\n        </div>\n        <button type=\"button\" onclick=\"document.getElementById('demo-booking').scrollIntoView({behavior:'smooth'})\" class=\"bg-[#FF5722] hover:bg-[#E64A19] text-white font-label-bold h-12 rounded-lg shadow-lg transition-all uppercase tracking-wide\">\n          Sign in\n        </button>\n        <p class=\"text-center text-body-sm text-secondary\">Don't have an account? <a href=\"search.html\" class=\"text-primary font-label-bold\">Book your first car \u2192</a></p>\n      </form>\n\n      <!-- Reference lookup -->\n      <form id=\"form-lookup\" class=\"hidden flex-col gap-4\">\n        <label class=\"flex flex-col gap-2\">\n          <span class=\"font-label-bold text-on-surface-variant text-sm\">Booking reference</span>\n          <input type=\"text\" required placeholder=\"MNE-123456\" class=\"h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary uppercase tracking-wider\"/>\n        </label>\n        <label class=\"flex flex-col gap-2\">\n          <span class=\"font-label-bold text-on-surface-variant text-sm\">Email used at booking</span>\n          <input type=\"email\" required class=\"h-12 px-4 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary\"/>\n        </label>\n        <button type=\"button\" onclick=\"document.getElementById('demo-booking').scrollIntoView({behavior:'smooth'})\" class=\"bg-primary hover:bg-primary-container text-white font-label-bold h-12 rounded-lg shadow-lg transition-all uppercase tracking-wide\">\n          Find my booking\n        </button>\n      </form>\n    </div>\n  </div>\n</section>",
+                "_title": "Manage your booking in seconds"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "2cab984",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "MNE-298714"
+      },
+      "elements": [
+        {
+          "id": "00cee45",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "36d1f7d",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<section id=\"demo-booking\" class=\"py-section-padding px-gutter bg-background\">\n  <div class=\"max-w-container-max mx-auto\">\n    <div class=\"flex flex-col md:flex-row justify-between items-start md:items-center mb-stack-lg gap-4\">\n      <div>\n        <span class=\"text-body-sm text-secondary\">Booking reference</span>\n        <h2 class=\"font-h2 text-h2 text-primary\">MNE-298714</h2>\n      </div>\n      <span class=\"bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full font-label-bold uppercase tracking-wider text-xs\">Confirmed</span>\n    </div>\n\n    <div class=\"grid grid-cols-1 lg:grid-cols-3 gap-6\">\n      <!-- Car card -->\n      <div class=\"bg-white rounded-xl shadow-ambient overflow-hidden\">\n        <img class=\"w-full h-44 object-cover\" alt=\"Volkswagen Polo\" src=\"https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?q=80&w=1200&auto=format&fit=crop\"/>\n        <div class=\"p-6\">\n          <h3 class=\"font-h3 text-h3 text-primary mb-1\">Volkswagen Polo</h3>\n          <p class=\"text-body-sm text-secondary mb-stack-md\">Economy \u00b7 Manual \u00b7 A/C \u00b7 5 seats</p>\n          <button class=\"text-primary font-label-bold flex items-center gap-2 hover:gap-3 transition-all\">\n            Upgrade vehicle <span class=\"material-symbols-outlined text-[18px]\">arrow_right_alt</span>\n          </button>\n        </div>\n      </div>\n\n      <!-- Itinerary -->\n      <div class=\"bg-white rounded-xl shadow-ambient p-6 lg:col-span-2 flex flex-col gap-4\">\n        <h3 class=\"font-h3 text-h3 text-primary mb-2\">Your itinerary</h3>\n        <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\">\n          <div class=\"border border-outline-variant/40 rounded-lg p-4\">\n            <p class=\"text-body-sm text-secondary uppercase tracking-wider mb-1\">Pick-up</p>\n            <p class=\"font-label-bold text-primary text-base\">Tivat Airport (TIV)</p>\n            <p class=\"text-body-sm text-secondary\">Sat, 7 Jun 2025 \u00b7 14:30</p>\n          </div>\n          <div class=\"border border-outline-variant/40 rounded-lg p-4\">\n            <p class=\"text-body-sm text-secondary uppercase tracking-wider mb-1\">Drop-off</p>\n            <p class=\"font-label-bold text-primary text-base\">Podgorica Airport (TGD)</p>\n            <p class=\"text-body-sm text-secondary\">Sat, 14 Jun 2025 \u00b7 11:00</p>\n          </div>\n        </div>\n        <div class=\"flex flex-wrap gap-2 mt-2\">\n          <button class=\"border border-primary text-primary font-label-bold px-4 py-2 rounded-lg hover:bg-primary hover:text-on-primary transition-all flex items-center gap-2\">\n            <span class=\"material-symbols-outlined text-[18px]\">edit_calendar</span> Change dates\n          </button>\n          <button class=\"border border-primary text-primary font-label-bold px-4 py-2 rounded-lg hover:bg-primary hover:text-on-primary transition-all flex items-center gap-2\">\n            <span class=\"material-symbols-outlined text-[18px]\">add_location</span> Change location\n          </button>\n          <button class=\"border border-primary text-primary font-label-bold px-4 py-2 rounded-lg hover:bg-primary hover:text-on-primary transition-all flex items-center gap-2\">\n            <span class=\"material-symbols-outlined text-[18px]\">add</span> Add extras\n          </button>\n        </div>\n      </div>\n\n      <!-- Price summary -->\n      <div class=\"bg-white rounded-xl shadow-ambient p-6 lg:col-span-2 flex flex-col gap-3\">\n        <h3 class=\"font-h3 text-h3 text-primary mb-2\">Price breakdown</h3>\n        <div class=\"flex justify-between text-body-md\"><span class=\"text-secondary\">7 days @ 45 \u20ac/day</span><span>315.00 \u20ac</span></div>\n        <div class=\"flex justify-between text-body-md\"><span class=\"text-secondary\">Cross-border (Croatia)</span><span>21.00 \u20ac</span></div>\n        <div class=\"flex justify-between text-body-md\"><span class=\"text-secondary\">Additional driver</span><span>35.00 \u20ac</span></div>\n        <div class=\"flex justify-between text-body-md text-error\"><span>Loyalty discount</span><span>\u221218.00 \u20ac</span></div>\n        <div class=\"border-t border-outline-variant/40 my-2\"></div>\n        <div class=\"flex justify-between font-h3 text-h3 text-primary\"><span>Total paid</span><span>353.00 \u20ac</span></div>\n        <button class=\"text-primary font-label-bold underline underline-offset-4 text-left\">Download VAT invoice</button>\n      </div>\n\n      <!-- Quick actions -->\n      <div class=\"bg-primary-container text-on-primary rounded-xl p-6 text-white flex flex-col gap-3\">\n        <h3 class=\"font-h3 text-h3\">Need help?</h3>\n        <p class=\"text-body-sm opacity-90\">Talk to a real human in under a minute.</p>\n        <a href=\"tel:+38220123456\" class=\"bg-[#FF5722] hover:bg-[#E64A19] text-white font-label-bold px-6 py-3 rounded-lg text-center\">Call +382 20 123 456</a>\n        <a href=\"support.html\" class=\"border border-white/40 text-white font-label-bold px-6 py-3 rounded-lg text-center hover:bg-white hover:text-primary transition-all\">Open a chat</a>\n        <button class=\"text-white/80 hover:text-white text-body-sm underline underline-offset-4 mt-2 text-left\">Cancel this booking</button>\n      </div>\n    </div>\n  </div>\n</section>",
+                "_title": "MNE-298714"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "e940e5f",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "stretch_section": "section-stretched",
+        "content_width": {
+          "unit": "px",
+          "size": 1280
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "_title": "Footer"
+      },
+      "elements": [
+        {
+          "id": "2424c4f",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "d8be1d9",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<footer class=\"w-full py-section-padding px-gutter flex flex-col items-center gap-stack-lg bg-primary text-on-primary\">\n  <div class=\"max-w-container-max w-full flex flex-col md:flex-row justify-between items-start gap-12 border-b border-on-primary/10 pb-12\">\n    <div class=\"flex flex-col gap-4 max-w-[320px]\">\n      <span class=\"font-h3 text-h3 font-bold text-on-primary\">MontenegroDrive</span>\n      <p class=\"text-body-sm opacity-80\">Premium car rental in Montenegro for business travelers and tourists. We guarantee safety, quality, and the best prices.</p>\n    </div>\n    <div class=\"grid grid-cols-2 md:grid-cols-4 gap-12\">\n      <div class=\"flex flex-col gap-4\">\n        <h5 class=\"font-label-bold text-tertiary-fixed uppercase tracking-wider\">Explore</h5>\n        <ul class=\"flex flex-col gap-2 opacity-80 text-body-sm\">\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"search.html\">Fleet</a></li>\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"locations.html\">Locations</a></li>\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"travel-guide.html\">Travel Guide</a></li>\n        </ul>\n      </div>\n      <div class=\"flex flex-col gap-4\">\n        <h5 class=\"font-label-bold text-tertiary-fixed uppercase tracking-wider\">Support</h5>\n        <ul class=\"flex flex-col gap-2 opacity-80 text-body-sm\">\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"support.html\">Contact Us</a></li>\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"support.html#faq\">FAQ</a></li>\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"manage-booking.html\">Manage Booking</a></li>\n        </ul>\n      </div>\n      <div class=\"flex flex-col gap-4\">\n        <h5 class=\"font-label-bold text-tertiary-fixed uppercase tracking-wider\">Monte Club</h5>\n        <p class=\"text-body-sm opacity-80\">Partner with us to grow your car rental business in the region. Do you have a car that you don't use and want to earn money?</p>\n        <a class=\"border border-on-primary px-5 py-2 rounded-lg font-label-bold hover:bg-on-primary hover:text-primary transition-all w-fit text-center text-body-sm\" href=\"monte-club.html\">Join Monte Club</a>\n      </div>\n      <div class=\"flex flex-col gap-4\">\n        <h5 class=\"font-label-bold text-tertiary-fixed uppercase tracking-wider\">Legal</h5>\n        <ul class=\"flex flex-col gap-2 opacity-80 text-body-sm\">\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"legal.html#privacy\">Privacy Policy</a></li>\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"legal.html#terms\">Terms of Service</a></li>\n          <li><a class=\"hover:text-secondary-fixed transition-opacity\" href=\"legal.html#cookies\">Cookie Policy</a></li>\n        </ul>\n      </div>\n    </div>\n  </div>\n  <div class=\"flex flex-col md:flex-row justify-between w-full max-w-container-max pt-2 opacity-70 text-body-sm gap-4\">\n    <p>\u00a9 2024 MontenegroDrive Car Rentals. All rights reserved.</p>\n    <div class=\"flex gap-6 items-center\">\n      <a href=\"#\" aria-label=\"Facebook\" class=\"hover:text-secondary-fixed\"><span class=\"material-symbols-outlined\">public</span></a>\n      <a href=\"#\" aria-label=\"Instagram\" class=\"hover:text-secondary-fixed\"><span class=\"material-symbols-outlined\">photo_camera</span></a>\n      <a href=\"#\" aria-label=\"Share\" class=\"hover:text-secondary-fixed\"><span class=\"material-symbols-outlined\">share</span></a>\n    </div>\n  </div>\n</footer>",
+                "_title": "Footer"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": {
+    "template": "elementor_canvas",
+    "background_background": "classic",
+    "background_color": "#f7f9fb"
+  }
+}

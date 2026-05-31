@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Search Results — MontenegroDrive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "secondary-container": "#d3e2ed", "on-secondary": "#ffffff", "inverse-on-surface": "#eff1f3",
+          "surface-variant": "#e0e3e5", "background": "#f7f9fb", "surface-tint": "#455f87",
+          "on-surface-variant": "#43474e", "secondary-fixed": "#d6e5ef", "primary-fixed-dim": "#adc8f5",
+          "surface-container-low": "#f2f4f6", "surface-dim": "#d8dadc", "on-tertiary-fixed": "#2e1500",
+          "on-primary-fixed": "#001b3b", "on-error": "#ffffff", "on-tertiary": "#ffffff",
+          "on-tertiary-fixed-variant": "#663d16", "on-primary-container": "#7b95c0",
+          "on-secondary-fixed": "#0f1d25", "tertiary-container": "#472400", "error": "#ba1a1a",
+          "surface": "#f7f9fb", "on-primary-fixed-variant": "#2d476e", "outline-variant": "#c4c6cf",
+          "on-surface": "#191c1e", "outline": "#74777f", "surface-container": "#eceef0",
+          "surface-bright": "#f7f9fb", "on-background": "#191c1e", "tertiary": "#291300",
+          "primary-fixed": "#d5e3ff", "inverse-primary": "#adc8f5", "on-tertiary-container": "#bf895b",
+          "on-secondary-container": "#56656e", "surface-container-highest": "#e0e3e5",
+          "surface-container-high": "#e6e8ea", "secondary": "#526069", "secondary-fixed-dim": "#bac9d3",
+          "on-error-container": "#93000a", "tertiary-fixed-dim": "#f6ba88", "tertiary-fixed": "#ffdcc1",
+          "primary": "#001835", "inverse-surface": "#2d3133", "on-primary": "#ffffff",
+          "error-container": "#ffdad6", "primary-container": "#0f2d52",
+          "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#3b4951",
+          "brand-accent": "#FF7E1D"
+        },
+        borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", "2xl": "1rem", full: "9999px" },
+        spacing: {
+          "gutter": "24px", "margin-mobile": "16px", "stack-sm": "8px", "stack-lg": "32px",
+          "container-max": "1280px", "stack-md": "16px", "section-padding": "80px"
+        },
+        fontFamily: {
+          "body-md": ["Inter"], "body-sm": ["Inter"], "label-bold": ["Inter"],
+          "h2": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "h3": ["Plus Jakarta Sans"],
+          "h1": ["Plus Jakarta Sans"], "price-display": ["Plus Jakarta Sans"]
+        },
+        fontSize: {
+          "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }],
+          "body-sm": ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+          "label-bold": ["14px", { lineHeight: "1.2", fontWeight: "600" }],
+          "h2": ["32px", { lineHeight: "1.3", fontWeight: "700" }],
+          "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+          "h3": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
+          "h1": ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }],
+          "price-display": ["28px", { lineHeight: "1", letterSpacing: "-0.01em", fontWeight: "700" }]
+        }
+      }
+    }
+  };
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+  .shadow-custom { box-shadow: 0 4px 20px rgba(15, 45, 82, 0.08); }
+  .filter-checkbox:checked { background-color: #001835; border-color: #001835; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+<!-- BEGIN SEO -->
+<meta name="description" content="Browse 24+ rental cars in Budva, Kotor, Tivat and across Montenegro. Filter by category, fuel, supplier — economy from €45/day."/>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"/>
+<meta name="theme-color" content="#001835"/>
+<link rel="canonical" href="https://montenegrodrive.com/search/"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="MontenegroDrive"/>
+<meta property="og:title" content="Search Cars — MontenegroDrive"/>
+<meta property="og:description" content="Browse 24+ rental cars in Budva, Kotor, Tivat and across Montenegro. Filter by category, fuel, supplier — economy from €45/day."/>
+<meta property="og:url" content="https://montenegrodrive.com/search/"/>
+<meta property="og:image" content="https://montenegrodrive.com/screenshot.png"/>
+<meta property="og:locale" content="en_US"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Search Cars — MontenegroDrive"/>
+<meta name="twitter:description" content="Browse 24+ rental cars in Budva, Kotor, Tivat and across Montenegro. Filter by category, fuel, supplier — economy from €45/day."/>
+<meta name="twitter:image" content="https://montenegrodrive.com/screenshot.png"/>
+
+<!-- Favicon (SVG with raster fallback) -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon.svg"/>
+<link rel="mask-icon" href="favicon.svg" color="#001835"/>
+<!-- END SEO -->
+</head>
+<body class="bg-background text-on-surface font-body-md">
+
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface shadow-sm">
+  <div class="max-w-container-max mx-auto flex justify-between items-center px-gutter py-4">
+    <div class="flex items-center gap-10">
+      <a href="index.html" class="flex items-center gap-3 group" aria-label="MontenegroDrive — Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" class="w-10 h-10 flex-shrink-0 transition-transform group-hover:scale-105" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#001835"/>
+          <text x="20" y="29" font-family="'Plus Jakarta Sans', system-ui, sans-serif"
+                font-size="26" font-weight="800" text-anchor="middle" fill="#FF5722">M</text>
+        </svg>
+        <span class="font-h2 text-h2 font-bold text-primary leading-none">MontenegroDrive</span>
+      </a>
+      <nav class="hidden md:flex gap-6">
+        <a class="text-primary font-label-bold border-b-2 border-primary transition-colors" href="search.html">Fleet</a>
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="travel-guide.html">Travel Guide</a>
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="search.html">Rentals</a>
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="locations.html">Locations</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4">
+      <a class="hidden md:block text-secondary font-label-bold hover:text-primary transition-colors" href="support.html">Support</a>
+      <a class="bg-primary text-on-primary font-label-bold px-6 py-2.5 rounded-lg hover:shadow-lg transition-all" href="manage-booking.html">Manage Booking</a>
+    </div>
+  </div>
+</header>
+
+<!-- Content Canvas -->
+<main class="pt-24 pb-section-padding max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-8">
+
+  <!-- Sidebar Filters -->
+  <aside class="md:col-span-3 space-y-stack-lg">
+    <div class="bg-surface-container-lowest p-6 rounded-xl shadow-custom border border-outline-variant/30">
+      <h3 class="font-h3 text-h3 mb-6 text-primary">Filters</h3>
+
+      <div class="mb-8">
+        <label class="block font-label-bold text-primary mb-4">Price Range</label>
+        <input class="w-full accent-primary" max="2000" min="200" step="50" type="range" value="1000"/>
+        <div class="flex justify-between mt-2 text-body-sm text-secondary">
+          <span>200 €</span>
+          <span>2000 €+</span>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <label class="block font-label-bold text-primary mb-4">Car category</label>
+        <div class="space-y-3">
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input class="rounded border-outline w-5 h-5 filter-checkbox transition-all" type="checkbox"/>
+            <span class="text-body-md group-hover:text-primary">Economy</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input checked class="rounded border-outline w-5 h-5 filter-checkbox transition-all" type="checkbox"/>
+            <span class="text-body-md group-hover:text-primary">SUV</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input class="rounded border-outline w-5 h-5 filter-checkbox transition-all" type="checkbox"/>
+            <span class="text-body-md group-hover:text-primary">Luxury</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <label class="block font-label-bold text-primary mb-4">Fuel type</label>
+        <div class="space-y-3">
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input class="rounded border-outline w-5 h-5 filter-checkbox transition-all" type="checkbox"/>
+            <span class="text-body-md group-hover:text-primary">Petrol</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input class="rounded border-outline w-5 h-5 filter-checkbox transition-all" type="checkbox"/>
+            <span class="text-body-md group-hover:text-primary">Diesel</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input class="rounded border-outline w-5 h-5 filter-checkbox transition-all" type="checkbox"/>
+            <span class="text-body-md group-hover:text-primary">Electric / Hybrid</span>
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label class="block font-label-bold text-primary mb-4">Supplier</label>
+        <div class="space-y-3">
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input class="rounded border-outline w-5 h-5 filter-checkbox transition-all" type="checkbox"/>
+            <span class="text-body-md group-hover:text-primary">Local Stars</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input class="rounded border-outline w-5 h-5 filter-checkbox transition-all" type="checkbox"/>
+            <span class="text-body-md group-hover:text-primary">Global Drive</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side Promotion Card -->
+    <div class="bg-primary-container p-6 rounded-xl relative overflow-hidden text-on-primary">
+      <div class="relative z-10">
+        <h4 class="font-h3 text-h3 mb-2 text-white">Full Insurance</h4>
+        <p class="text-body-sm opacity-90 mb-4 text-white">Travel without worries with our Zero Excess premium coverage.</p>
+        <button class="text-white font-label-bold underline decoration-2 underline-offset-4">Learn More</button>
+      </div>
+      <div class="absolute -bottom-4 -right-4 opacity-10 text-white">
+        <span class="material-symbols-outlined" style="font-size: 7rem;">verified_user</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Results -->
+  <div class="md:col-span-9">
+    <!-- Sort Bar -->
+    <div class="bg-surface-container-lowest p-4 rounded-xl shadow-custom mb-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-2 w-full sm:w-auto overflow-x-auto no-scrollbar">
+        <button class="px-6 py-2 rounded-full bg-primary text-on-primary font-label-bold whitespace-nowrap">Recommended</button>
+        <button class="px-6 py-2 rounded-full text-secondary hover:bg-secondary-container transition-colors font-label-bold whitespace-nowrap">Lowest Price</button>
+        <button class="px-6 py-2 rounded-full text-secondary hover:bg-secondary-container transition-colors font-label-bold whitespace-nowrap">Highest Rated</button>
+      </div>
+      <div class="text-body-sm text-secondary px-2">
+        Found 24 cars in <span class="font-bold text-primary">Budva, Montenegro</span>
+      </div>
+    </div>
+
+    <!-- Results List -->
+    <div class="space-y-6">
+
+      <!-- Result Card 1: Economy -->
+      <article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-custom border border-transparent hover:border-primary/20 transition-all group grid grid-cols-1 md:grid-cols-12">
+        <div class="md:col-span-4 relative overflow-hidden h-48 md:h-auto bg-surface-container-low">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Volkswagen Polo" src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?q=80&w=1400&auto=format&fit=crop"/>
+          <div class="absolute top-3 left-3 flex gap-2">
+            <span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Best Value</span>
+          </div>
+        </div>
+        <div class="md:col-span-5 p-6 flex flex-col justify-between">
+          <div>
+            <h2 class="font-h3 text-h3 text-primary mb-1">Volkswagen Polo <span class="font-normal text-secondary text-body-md italic">or similar</span></h2>
+            <p class="text-body-sm text-on-surface-variant mb-4 flex items-center gap-2">
+              <span class="material-symbols-outlined !text-base">directions_car</span> Economy Class
+            </p>
+            <div class="grid grid-cols-2 gap-y-3">
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined !text-[20px]">ac_unit</span>
+                <span class="text-body-sm">Air Conditioning</span>
+              </div>
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined !text-[20px]">person</span>
+                <span class="text-body-sm">5 seats</span>
+              </div>
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined !text-[20px]">settings</span>
+                <span class="text-body-sm">Manual</span>
+              </div>
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined !text-[20px]">local_gas_station</span>
+                <span class="text-body-sm">Full to Full</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center p-2">
+              <span class="material-symbols-outlined text-primary">local_taxi</span>
+            </div>
+            <div>
+              <span class="text-body-sm font-bold block leading-tight">Local Stars Rental</span>
+              <span class="text-[10px] text-on-tertiary-container uppercase font-bold">Recommended supplier</span>
+              <div class="flex items-center gap-1 mt-1">
+                <span class="material-symbols-outlined text-primary !text-sm">verified</span>
+                <span class="text-[10px] text-primary font-bold uppercase">Verified Provider</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-3 p-6 bg-surface-container-low/30 border-l border-outline-variant/30 flex flex-col justify-end">
+          <div class="text-right mb-4">
+            <span class="block text-body-sm text-secondary">Total for 3 days: 135 €</span>
+            <span class="block text-error font-label-bold text-[12px] my-1 uppercase tracking-tight">Only 2 left at this price!</span>
+            <div class="flex items-baseline justify-end gap-1">
+              <span class="font-price-display text-price-display text-primary">45 €</span>
+              <span class="text-body-sm text-secondary">/ day</span>
+            </div>
+          </div>
+          <button class="w-full bg-[#FF7E1D] text-white font-label-bold py-3.5 rounded-lg shadow-lg hover:brightness-110 transition-all uppercase tracking-wide">View Offer</button>
+          <p class="text-[10px] text-center text-secondary mt-3 uppercase tracking-tighter">Free cancellation until 48h before</p>
+        </div>
+      </article>
+
+      <!-- Result Card 2: SUV -->
+      <article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-custom border border-transparent hover:border-primary/20 transition-all group grid grid-cols-1 md:grid-cols-12">
+        <div class="md:col-span-4 relative overflow-hidden h-48 md:h-auto bg-surface-container-low">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Dacia Duster 4x4" src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?q=80&w=1400&auto=format&fit=crop"/>
+          <div class="absolute top-3 left-3 flex gap-2">
+            <span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Top Rated</span>
+          </div>
+        </div>
+        <div class="md:col-span-5 p-6 flex flex-col justify-between">
+          <div>
+            <h2 class="font-h3 text-h3 text-primary mb-1">Dacia Duster 4x4 <span class="font-normal text-secondary text-body-md italic">or similar</span></h2>
+            <p class="text-body-sm text-on-surface-variant mb-4 flex items-center gap-2">
+              <span class="material-symbols-outlined !text-base">terrain</span> SUV / Crossover
+            </p>
+            <div class="grid grid-cols-2 gap-y-3">
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined !text-[20px]">ac_unit</span>
+                <span class="text-body-sm">Air Conditioning</span>
+              </div>
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined !text-[20px]">group</span>
+                <span class="text-body-sm">5 seats</span>
+              </div>
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined !text-[20px]">luggage</span>
+                <span class="text-body-sm">3 Large Bags</span>
+              </div>
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined !text-[20px]">settings</span>
+                <span class="text-body-sm">Automatic</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center p-2">
+              <span class="material-symbols-outlined text-primary">stars</span>
+            </div>
+            <div>
+              <span class="text-body-sm font-bold block leading-tight">Global Drive</span>
+              <span class="text-[10px] text-on-tertiary-container uppercase font-bold">Premium global network</span>
+              <div class="flex items-center gap-1 mt-1">
+                <span class="material-symbols-outlined text-primary !text-sm">verified</span>
+                <span class="text-[10px] text-primary font-bold uppercase">Verified Provider</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-3 p-6 bg-surface-container-low/30 border-l border-outline-variant/30 flex flex-col justify-end">
+          <div class="text-right mb-4">
+            <span class="block text-body-sm text-secondary">Total for 3 days: 255 €</span>
+            <span class="block text-tertiary-container font-label-bold text-[12px] my-1 uppercase tracking-tight">High demand: Booked 5 times in the last hour</span>
+            <div class="flex items-baseline justify-end gap-1">
+              <span class="font-price-display text-price-display text-primary">85 €</span>
+              <span class="text-body-sm text-secondary">/ day</span>
+            </div>
+          </div>
+          <button class="w-full bg-[#FF7E1D] text-white font-label-bold py-3.5 rounded-lg shadow-lg hover:brightness-110 transition-all uppercase tracking-wide">View Offer</button>
+          <p class="text-[10px] text-center text-secondary mt-3 uppercase tracking-tighter">Unlimited Mileage Included</p>
+        </div>
+      </article>
+
+      <!-- Result Card 3: Luxury -->
+      <article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-custom border border-transparent hover:border-primary/20 transition-all group grid grid-cols-1 md:grid-cols-12">
+        <div class="md:col-span-4 relative overflow-hidden h-48 md:h-auto bg-surface-container-low">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="BMW 5 Series" src="https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1400&auto=format&fit=crop"/>
+        </div>
+        <div class="md:col-span-5 p-6 flex flex-col justify-between">
+          <div>
+            <h2 class="font-h3 text-h3 text-primary mb-1">BMW 5 Series <span class="font-normal text-secondary text-body-md italic">or similar</span></h2>
+            <p class="text-body-sm text-on-surface-variant mb-4 flex items-center gap-2">
+              <span class="material-symbols-outlined !text-base">diamond</span> Luxury Class
+            </p>
+            <div class="grid grid-cols-2 gap-y-3">
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined !text-[20px]">ac_unit</span>
+                <span class="text-body-sm">Dual-zone AC</span>
+              </div>
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined !text-[20px]">person</span>
+                <span class="text-body-sm">5 seats</span>
+              </div>
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined !text-[20px]">settings</span>
+                <span class="text-body-sm">Automatic</span>
+              </div>
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined !text-[20px]">gps_fixed</span>
+                <span class="text-body-sm">Built-in GPS</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center p-2">
+              <span class="material-symbols-outlined text-primary">airport_shuttle</span>
+            </div>
+            <div>
+              <span class="text-body-sm font-bold block leading-tight">Luxury Fleet MNE</span>
+              <span class="text-[10px] text-on-tertiary-container uppercase font-bold">Chauffeur service available</span>
+              <div class="flex items-center gap-1 mt-1">
+                <span class="material-symbols-outlined text-primary !text-sm">verified</span>
+                <span class="text-[10px] text-primary font-bold uppercase">Verified Provider</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-3 p-6 bg-surface-container-low/30 border-l border-outline-variant/30 flex flex-col justify-end">
+          <div class="text-right mb-4">
+            <span class="block text-body-sm text-secondary">Total for 3 days: 435 €</span>
+            <span class="block text-error font-label-bold text-[12px] my-1 uppercase tracking-tight">Limited availability for your dates</span>
+            <div class="flex items-baseline justify-end gap-1">
+              <span class="font-price-display text-price-display text-primary">145 €</span>
+              <span class="text-body-sm text-secondary">/ day</span>
+            </div>
+          </div>
+          <button class="w-full bg-[#FF7E1D] text-white font-label-bold py-3.5 rounded-lg shadow-lg hover:brightness-110 transition-all uppercase tracking-wide">View Offer</button>
+          <p class="text-[10px] text-center text-secondary mt-3 uppercase tracking-tighter">Premium insurance included</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="mt-12 flex justify-center gap-2">
+      <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-outline-variant text-primary hover:bg-surface-container-high transition-colors">
+        <span class="material-symbols-outlined">chevron_left</span>
+      </button>
+      <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-on-primary font-bold">1</button>
+      <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-outline-variant text-primary hover:bg-surface-container-high transition-colors">2</button>
+      <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-outline-variant text-primary hover:bg-surface-container-high transition-colors">3</button>
+      <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-outline-variant text-primary hover:bg-surface-container-high transition-colors">
+        <span class="material-symbols-outlined">chevron_right</span>
+      </button>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-section-padding px-gutter flex flex-col items-center gap-stack-lg bg-primary text-on-primary">
+  <div class="max-w-container-max w-full grid grid-cols-1 md:grid-cols-4 gap-stack-lg">
+    <div>
+      <span class="font-h3 text-h3 font-bold text-on-primary block mb-4">MontenegroDrive</span>
+      <p class="text-body-sm opacity-80 max-w-xs">Connecting travelers with the best local and international car rental services across the Adriatic coast.</p>
+    </div>
+    <div class="flex flex-col gap-3">
+      <span class="font-label-bold mb-2 uppercase tracking-wider text-secondary-fixed">Navigation</span>
+      <a class="text-on-primary-container hover:text-secondary-fixed opacity-90 hover:opacity-100" href="search.html">Fleet</a>
+      <a class="text-on-primary-container hover:text-secondary-fixed opacity-90 hover:opacity-100" href="locations.html">Locations</a>
+      <a class="text-on-primary-container hover:text-secondary-fixed opacity-90 hover:opacity-100" href="travel-guide.html">Travel Guide</a>
+    </div>
+    <div class="flex flex-col gap-3">
+      <span class="font-label-bold mb-2 uppercase tracking-wider text-secondary-fixed">Support</span>
+      <a class="text-on-primary-container hover:text-secondary-fixed opacity-90 hover:opacity-100" href="support.html">Contact Us</a>
+      <a class="text-on-primary-container hover:text-secondary-fixed opacity-90 hover:opacity-100" href="support.html#faq">FAQ</a>
+      <a class="text-on-primary-container hover:text-secondary-fixed opacity-90 hover:opacity-100" href="manage-booking.html">Manage Booking</a>
+    </div>
+    <div class="flex flex-col gap-3">
+      <span class="font-label-bold mb-2 uppercase tracking-wider text-secondary-fixed">Monte Club</span>
+      <p class="text-body-sm opacity-80 mb-4">Partner with us to grow your car rental business in the region. Do you have a car that you don't use and want to earn money?</p>
+      <a class="border border-on-primary px-6 py-2 rounded-lg font-label-bold hover:bg-on-primary hover:text-primary transition-all w-fit text-center" href="monte-club.html">Join Monte Club</a>
+    </div>
+  </div>
+  <div class="w-full max-w-container-max pt-8 mt-8 border-t border-on-primary/10 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-body-sm opacity-60">© 2024 MontenegroDrive Car Rentals. All rights reserved.</p>
+    <div class="flex gap-6">
+      <a class="text-body-sm text-on-primary-container hover:text-secondary-fixed opacity-90" href="legal.html#privacy">Privacy Policy</a>
+      <a class="text-body-sm text-on-primary-container hover:text-secondary-fixed opacity-90" href="legal.html#terms">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

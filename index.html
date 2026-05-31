@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MontenegroDrive — Find the Best Car Rental in Montenegro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "secondary-container": "#d3e2ed", "on-secondary": "#ffffff", "inverse-on-surface": "#eff1f3",
+          "surface-variant": "#e0e3e5", "background": "#f7f9fb", "surface-tint": "#455f87",
+          "on-surface-variant": "#43474e", "secondary-fixed": "#d6e5ef", "primary-fixed-dim": "#adc8f5",
+          "surface-container-low": "#f2f4f6", "surface-dim": "#d8dadc", "on-tertiary-fixed": "#2e1500",
+          "on-primary-fixed": "#001b3b", "on-error": "#ffffff", "on-tertiary": "#ffffff",
+          "on-tertiary-fixed-variant": "#663d16", "on-primary-container": "#7b95c0",
+          "on-secondary-fixed": "#0f1d25", "tertiary-container": "#472400", "error": "#ba1a1a",
+          "surface": "#f7f9fb", "on-primary-fixed-variant": "#2d476e", "outline-variant": "#c4c6cf",
+          "on-surface": "#191c1e", "outline": "#74777f", "surface-container": "#eceef0",
+          "surface-bright": "#f7f9fb", "on-background": "#191c1e", "tertiary": "#291300",
+          "primary-fixed": "#d5e3ff", "inverse-primary": "#adc8f5", "on-tertiary-container": "#bf895b",
+          "on-secondary-container": "#56656e", "surface-container-highest": "#e0e3e5",
+          "surface-container-high": "#e6e8ea", "secondary": "#526069", "secondary-fixed-dim": "#bac9d3",
+          "on-error-container": "#93000a", "tertiary-fixed-dim": "#f6ba88", "tertiary-fixed": "#ffdcc1",
+          "primary": "#001835", "inverse-surface": "#2d3133", "on-primary": "#ffffff",
+          "error-container": "#ffdad6", "primary-container": "#0f2d52",
+          "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#3b4951",
+          "brand-accent": "#FF5722"
+        },
+        borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", "2xl": "1rem", full: "9999px" },
+        spacing: {
+          "gutter": "24px", "margin-mobile": "16px", "stack-sm": "8px", "stack-lg": "32px",
+          "container-max": "1280px", "stack-md": "16px", "section-padding": "80px"
+        },
+        fontFamily: {
+          "body-md": ["Inter"], "body-sm": ["Inter"], "label-bold": ["Inter"],
+          "h2": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "h3": ["Plus Jakarta Sans"],
+          "h1": ["Plus Jakarta Sans"], "price-display": ["Plus Jakarta Sans"]
+        },
+        fontSize: {
+          "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }],
+          "body-sm": ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+          "label-bold": ["14px", { lineHeight: "1.2", fontWeight: "600" }],
+          "h2": ["32px", { lineHeight: "1.3", fontWeight: "700" }],
+          "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+          "h3": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
+          "h1": ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }],
+          "price-display": ["28px", { lineHeight: "1", letterSpacing: "-0.01em", fontWeight: "700" }]
+        }
+      }
+    }
+  };
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+  .shadow-ambient { box-shadow: 0 4px 20px rgba(15, 45, 82, 0.08); }
+
+  /* Hero banner: static image background + dark gradient overlay for text legibility. */
+  .hero-poster-bg {
+    background-image:
+      linear-gradient(rgba(0, 24, 53, 0.40), rgba(0, 24, 53, 0.55)),
+      url('https://r4.wallpaperflare.com/wallpaper/45/350/447/5bd33a3b9c50b-wallpaper-c080b5796fd62e43a8efe776cb1604d8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #001835;
+  }
+</style>
+<!-- BEGIN SEO -->
+<meta name="description" content="Premium car rental across Montenegro. No hidden fees, free cancellation, 24/7 multilingual support. Counters at Tivat & Podgorica airports."/>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"/>
+<meta name="theme-color" content="#001835"/>
+<link rel="canonical" href="https://montenegrodrive.com/"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="MontenegroDrive"/>
+<meta property="og:title" content="MontenegroDrive — Best Car Rental in Montenegro"/>
+<meta property="og:description" content="Premium car rental across Montenegro. No hidden fees, free cancellation, 24/7 multilingual support. Counters at Tivat & Podgorica airports."/>
+<meta property="og:url" content="https://montenegrodrive.com/"/>
+<meta property="og:image" content="https://montenegrodrive.com/screenshot.png"/>
+<meta property="og:locale" content="en_US"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="MontenegroDrive — Best Car Rental in Montenegro"/>
+<meta name="twitter:description" content="Premium car rental across Montenegro. No hidden fees, free cancellation, 24/7 multilingual support. Counters at Tivat & Podgorica airports."/>
+<meta name="twitter:image" content="https://montenegrodrive.com/screenshot.png"/>
+
+<!-- Favicon (SVG with raster fallback) -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon.svg"/>
+<link rel="mask-icon" href="favicon.svg" color="#001835"/>
+<!-- END SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRental",
+  "name": "MontenegroDrive",
+  "url": "https://montenegrodrive.com",
+  "logo": "https://montenegrodrive.com/logo.svg",
+  "image": "https://montenegrodrive.com/screenshot.png",
+  "description": "Premium car rental across Montenegro. No hidden fees, free cancellation, 24/7 multilingual support.",
+  "telephone": "+382-20-123-456",
+  "email": "support@montenegrodrive.example",
+  "priceRange": "€€",
+  "areaServed": { "@type": "Country", "name": "Montenegro" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bulevar Sv. Petra Cetinjskog 130",
+    "addressLocality": "Podgorica",
+    "postalCode": "81000",
+    "addressCountry": "ME"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "2500",
+    "bestRating": "5"
+  },
+  "sameAs": []
+}
+</script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface shadow-sm">
+  <div class="max-w-container-max mx-auto flex justify-between items-center px-gutter py-4">
+    <div class="flex items-center gap-10">
+      <a href="index.html" class="flex items-center gap-3 group" aria-label="MontenegroDrive — Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" class="w-10 h-10 flex-shrink-0 transition-transform group-hover:scale-105" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#001835"/>
+          <text x="20" y="29" font-family="'Plus Jakarta Sans', system-ui, sans-serif"
+                font-size="26" font-weight="800" text-anchor="middle" fill="#FF5722">M</text>
+        </svg>
+        <span class="font-h2 text-h2 font-bold text-primary leading-none">MontenegroDrive</span>
+      </a>
+      <nav class="hidden md:flex gap-6">
+        <a class="text-primary font-label-bold border-b-2 border-primary transition-all duration-200" href="index.html">Fleet</a>
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="travel-guide.html">Travel Guide</a>
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="search.html">Rentals</a>
+        <a class="text-secondary font-body-md hover:text-primary-container transition-colors" href="locations.html">Locations</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4">
+      <a class="hidden md:block text-secondary font-label-bold hover:text-primary transition-colors" href="support.html">Support</a>
+      <a class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-bold hover:shadow-lg transition-all" href="manage-booking.html">Manage Booking</a>
+    </div>
+  </div>
+</header>
+
+<main class="pt-[72px]">
+
+<!-- Hero Section -->
+<section id="hero"
+         class="hero-poster-bg relative min-h-[700px] flex items-center justify-center px-gutter py-section-padding overflow-hidden bg-primary"
+         style="background-image: linear-gradient(rgba(0,24,53,0.40), rgba(0,24,53,0.55)), url('https://r4.wallpaperflare.com/wallpaper/45/350/447/5bd33a3b9c50b-wallpaper-c080b5796fd62e43a8efe776cb1604d8.jpg'); background-size: cover; background-position: center;">
+  <div class="max-w-container-max w-full flex flex-col items-center text-center gap-stack-lg z-10 relative">
+    <div class="flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/30 mb-2">
+      <span class="material-symbols-outlined text-yellow-400" style="font-variation-settings: 'FILL' 1;">star</span>
+      <span class="text-white font-label-bold">4.8/5 based on 2,500+ reviews</span>
+    </div>
+    <h1 class="font-h1 text-h1 text-white drop-shadow-md max-w-[800px]">Find the Best Car Rental in Montenegro</h1>
+    <p class="text-white text-body-lg font-body-lg max-w-[600px] opacity-90">Explore breathtaking views and picturesque towns with the market's safest and most affordable car rentals.</p>
+
+    <!-- Search Widget -->
+    <form action="search.html" class="w-full max-w-[1100px] bg-white p-6 md:p-10 rounded-xl shadow-2xl flex flex-col gap-6 mt-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="flex flex-col text-left gap-2">
+          <label class="font-label-bold text-on-surface-variant text-sm flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">location_on</span>
+            Pick-up location
+          </label>
+          <input class="w-full h-[56px] border-outline-variant focus:border-primary-container focus:ring-1 focus:ring-primary-container rounded-lg text-body-md bg-surface-container-lowest" placeholder="Tivat Airport (TIV)" type="text"/>
+        </div>
+        <div class="flex flex-col text-left gap-2">
+          <label class="font-label-bold text-on-surface-variant text-sm flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">flag</span>
+            Drop-off location
+          </label>
+          <input class="w-full h-[56px] border-outline-variant focus:border-primary-container focus:ring-1 focus:ring-primary-container rounded-lg text-body-md bg-surface-container-lowest" placeholder="Same as pick-up" type="text"/>
+        </div>
+        <div class="flex flex-col text-left gap-2">
+          <label class="font-label-bold text-on-surface-variant text-sm flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">calendar_today</span>
+            Pick-up date
+          </label>
+          <input class="w-full h-[56px] border-outline-variant focus:border-primary-container focus:ring-1 focus:ring-primary-container rounded-lg text-body-md bg-surface-container-lowest px-4" type="date"/>
+        </div>
+        <div class="flex flex-col text-left gap-2">
+          <label class="font-label-bold text-on-surface-variant text-sm flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">event_repeat</span>
+            Return date
+          </label>
+          <input class="w-full h-[56px] border-outline-variant focus:border-primary-container focus:ring-1 focus:ring-primary-container rounded-lg text-body-md bg-surface-container-lowest px-4" type="date"/>
+        </div>
+      </div>
+      <button type="submit" class="bg-[#FF5722] text-white h-[60px] rounded-lg font-h3 text-h3 flex items-center justify-center gap-2 hover:bg-[#E64A19] transition-all shadow-lg hover:shadow-xl">
+        Search Car Rental
+        <span class="material-symbols-outlined">search</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Trust Section -->
+<section class="bg-surface-container-low py-12 px-gutter">
+  <div class="max-w-container-max mx-auto flex flex-col items-center gap-8">
+    <p class="font-label-bold uppercase tracking-widest text-sm text-primary">Verified Providers</p>
+    <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-6 opacity-70 hover:opacity-100 transition-opacity">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/AVIS_logo_2012.svg/1280px-AVIS_logo_2012.svg.png"
+           alt="Avis"     class="h-9 md:h-10 w-auto object-contain" loading="lazy"/>
+      <img src="https://companieslogo.com/img/orig/HTZ-66df26af.png?t=1720244492"
+           alt="Hertz"    class="h-9 md:h-10 w-auto object-contain" loading="lazy"/>
+      <img src="https://storage.googleapis.com/arabclicks-morexa.appspot.com/2020/09/adv_europcar_big.png"
+           alt="Europcar" class="h-9 md:h-10 w-auto object-contain" loading="lazy"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Alamo_Rent_a_Car_%28logo%29.svg/3840px-Alamo_Rent_a_Car_%28logo%29.svg.png"
+           alt="Alamo Rent a Car" class="h-9 md:h-10 w-auto object-contain" loading="lazy"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Budget_logo.svg/3840px-Budget_logo.svg.png"
+           alt="Budget"   class="h-9 md:h-10 w-auto object-contain" loading="lazy"/>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-section-padding px-gutter bg-white">
+  <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="flex flex-col items-center text-center gap-4 p-8 rounded-xl bg-background border border-outline-variant/30 hover:shadow-md transition-all">
+      <div class="w-16 h-16 bg-secondary-container flex items-center justify-center rounded-full text-primary mb-2">
+        <span class="material-symbols-outlined text-[32px]">credit_card_off</span>
+      </div>
+      <h3 class="font-h3 text-h3 text-primary">No Hidden Fees</h3>
+      <p class="text-on-surface-variant font-body-md">The price you see is the price you pay. No surprises at the counter.</p>
+    </div>
+    <div class="flex flex-col items-center text-center gap-4 p-8 rounded-xl bg-background border border-outline-variant/30 hover:shadow-md transition-all">
+      <div class="w-16 h-16 bg-secondary-container flex items-center justify-center rounded-full text-primary mb-2">
+        <span class="material-symbols-outlined text-[32px]">verified</span>
+      </div>
+      <h3 class="font-h3 text-h3 text-primary">Best Price Guarantee</h3>
+      <p class="text-on-surface-variant font-body-md">We match market-leading prices to provide you with the best value for your money.</p>
+    </div>
+    <div class="flex flex-col items-center text-center gap-4 p-8 rounded-xl bg-background border border-outline-variant/30 hover:shadow-md transition-all">
+      <div class="w-16 h-16 bg-secondary-container flex items-center justify-center rounded-full text-primary mb-2">
+        <span class="material-symbols-outlined text-[32px]">event_busy</span>
+      </div>
+      <h3 class="font-h3 text-h3 text-primary">Free Cancellation</h3>
+      <p class="text-on-surface-variant font-body-md">Plans can change. Cancel for free up to 48 hours before your rental begins.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Popular Destinations Grid -->
+<section class="py-section-padding px-gutter bg-background">
+  <div class="max-w-container-max mx-auto flex flex-col gap-10">
+    <div class="flex flex-col md:flex-row justify-between items-end gap-4">
+      <div class="flex flex-col gap-2">
+        <h2 class="font-h2 text-h2 text-primary">Popular Destinations</h2>
+        <p class="text-secondary font-body-md">Discover the gems of Montenegro starting from our most popular locations.</p>
+      </div>
+      <button class="text-primary font-label-bold flex items-center gap-2 hover:underline">
+        View all locations
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </button>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <a href="search.html" class="group relative h-[400px] rounded-2xl overflow-hidden cursor-pointer shadow-lg block">
+        <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+             alt="Sveti Stefan island, Budva, Montenegro"
+             src="https://montenegroconsulate.si/storage/2017/09/Sveti-Stefan-Montenegro-Adriatic-HD-Wallpaper-1920x1080.jpg"
+             loading="lazy"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h4 class="font-h3 text-h3 mb-1">Budva</h4>
+          <p class="text-sm opacity-80 flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">car_rental</span>
+            142 cars available
+          </p>
+        </div>
+      </a>
+      <a href="search.html" class="group relative h-[400px] rounded-2xl overflow-hidden cursor-pointer shadow-lg block">
+        <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+             alt="Perast in the Bay of Kotor, Montenegro"
+             src="https://www.ontheluce.com/wp-content/uploads/2023/08/perast-bay-of-kotor-960x600.jpg"
+             loading="lazy"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h4 class="font-h3 text-h3 mb-1">Kotor</h4>
+          <p class="text-sm opacity-80 flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">car_rental</span>
+            98 cars available
+          </p>
+        </div>
+      </a>
+      <a href="search.html" class="group relative h-[400px] rounded-2xl overflow-hidden cursor-pointer shadow-lg block">
+        <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+             alt="Podgorica, capital of Montenegro"
+             src="https://www.vijesti.me/data/images/2024/02/19/12/5549456_shutterstock-1845962032_ls.jpg"
+             loading="lazy"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h4 class="font-h3 text-h3 mb-1">Podgorica</h4>
+          <p class="text-sm opacity-80 flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">car_rental</span>
+            215 cars available
+          </p>
+        </div>
+      </a>
+      <a href="search.html" class="group relative h-[400px] rounded-2xl overflow-hidden cursor-pointer shadow-lg block">
+        <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+             alt="Tivat and the Bay of Kotor, Montenegro"
+             src="https://bilder.apollo.se/tivat-1664477562-565078-ImageGalleryX2.jpg"
+             loading="lazy"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h4 class="font-h3 text-h3 mb-1">Tivat</h4>
+          <p class="text-sm opacity-80 flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">car_rental</span>
+            167 cars available
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-section-padding px-gutter flex flex-col items-center gap-stack-lg bg-primary text-on-primary">
+  <div class="max-w-container-max w-full flex flex-col md:flex-row justify-between items-start gap-12 border-b border-on-primary/10 pb-12">
+    <div class="flex flex-col gap-4 max-w-[300px]">
+      <span class="font-h3 text-h3 font-bold text-on-primary">MontenegroDrive</span>
+      <p class="text-body-sm opacity-80">Premium car rental in Montenegro for business travelers and tourists. We guarantee safety, quality, and the best prices.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed">Destinations</h5>
+        <ul class="flex flex-col gap-2 opacity-80 text-body-sm">
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="search.html">Budva</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="search.html">Kotor</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="search.html">Podgorica</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="search.html">Tivat</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed">Support</h5>
+        <ul class="flex flex-col gap-2 opacity-80 text-body-sm">
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="support.html">Contact Us</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="support.html#faq">FAQ</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="manage-booking.html">Manage Booking</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="monte-club.html">Monte Club</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="font-label-bold text-tertiary-fixed">Legal</h5>
+        <ul class="flex flex-col gap-2 opacity-80 text-body-sm">
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="legal.html#privacy">Privacy Policy</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="legal.html#terms">Terms of Service</a></li>
+          <li><a class="hover:text-secondary-fixed transition-opacity" href="legal.html#cookies">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row justify-between w-full max-w-container-max pt-2 opacity-70 text-body-sm">
+    <p>© 2024 MontenegroDrive Car Rentals. All rights reserved.</p>
+    <div class="flex gap-6 mt-4 md:mt-0">
+      <span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed">public</span>
+      <span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed">photo_camera</span>
+      <span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed">share</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
