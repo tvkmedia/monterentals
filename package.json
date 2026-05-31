@@ -1,0 +1,26 @@
+{
+  "name": "monterentals",
+  "version": "1.0.0",
+  "description": "MontenegroDrive — premium car-rental site for Montenegro. Static HTML + Tailwind, bundled with Vite for production builds.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "seo": "python3 build_seo.py",
+    "pages": "python3 build_pages.py"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ]
+}

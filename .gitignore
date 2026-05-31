@@ -1,5 +1,13 @@
-# Build artifacts — regenerated from sources
-montenegrodrive.zip
+# Node / Vite
+node_modules/
+dist/
+.vite/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
 
 # Python
 __pycache__/
@@ -21,10 +29,7 @@ venv/
 Thumbs.db
 desktop.ini
 
-# Logs
-*.log
-npm-debug.log*
-
 # Local environment overrides
 .env
 .env.local
+.env.production
