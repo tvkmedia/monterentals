@@ -178,10 +178,11 @@ JSONLD_HOME = f"""<script type="application/ld+json">
 # --------------------------------------------------------------------
 #  Logo markup (PNG, used in <header>)
 # --------------------------------------------------------------------
-#  Source file must exist at public/montenegrorentcar.png so Vite copies
-#  it to dist/montenegrorentcar.png on build — served at the site root.
-LOGO_SVG = '''<a href="index.html" class="flex items-center group" aria-label="MontenegroDrive — Home">
-        <img src="/montenegrorentcar.png" alt="MontenegroDrive"
+#  The PNG already lives on the production server, so we reference it via
+#  the absolute domain URL. That makes it work from local dev AND production
+#  without requiring the file to be inside the build output.
+LOGO_SVG = '''<a href="/" class="flex items-center group" aria-label="MontenegroDrive — Home">
+        <img src="https://rentcarinmontenegro.com/montenegrorentcar.png" alt="MontenegroDrive"
              class="h-10 md:h-12 w-auto transition-transform group-hover:scale-105"
              loading="eager" decoding="async"/>
       </a>'''
@@ -219,9 +220,9 @@ LOGO_RE_A = re.compile(
     r'<a\s+href="index\.html"\s+class="font-h2\s+text-h2\s+font-bold\s+text-primary"\s*>\s*MontenegroDrive\s*</a>',
 )
 LOGO_RE_B = re.compile(
-    # Matches the previous SVG variant (class="flex items-center gap-3 group")
-    # AND the current PNG variant (class="flex items-center group").
-    r'<a\s+href="index\.html"\s+class="flex\s+items-center[^"]*group"[^>]*aria-label[^>]*>.*?</a>',
+    # Matches any logo anchor we've shipped: SVG variant or PNG variant,
+    # with href="index.html", href="index", or href="/".
+    r'<a\s+href="(?:index\.html|index|/)"\s+class="flex\s+items-center[^"]*group"[^>]*aria-label[^>]*>.*?</a>',
     re.DOTALL,
 )
 

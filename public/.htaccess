@@ -1,0 +1,53 @@
+# MontenegroDrive — clean URL routing for Apache (Hostinger, Bluehost, etc.)
+# -----------------------------------------------------------------------------
+# Lets visitors hit  /search  /locations  /support  /article-komovi  etc.
+# instead of having to type the .html extension.
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # ---------------------------------------------------------------
+    # 1. If someone visits /page.html, 301-redirect them to /page so the
+    #    URL bar shows the clean version. Also handles trailing slashes.
+    # ---------------------------------------------------------------
+    RewriteCond %{THE_REQUEST} \s/+([^?]+?)\.html[?\s] [NC]
+    RewriteRule ^ /%1 [R=301,L,NE]
+
+    # ---------------------------------------------------------------
+    # 2. If the visitor's URL has no extension, internally rewrite to
+    #    /page.html so Apache serves the actual file (URL bar stays clean).
+    # ---------------------------------------------------------------
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]+$
+    RewriteRule ^([^/]+?)/?$ $1.html [L]
+</IfModule>
+
+# Brotli + gzip for static assets (Hostinger supports both)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Long cache on images, fonts, and CSS/JS — short on HTML
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html              "access plus 1 hour"
+    ExpiresByType image/png              "access plus 1 year"
+    ExpiresByType image/jpeg             "access plus 1 year"
+    ExpiresByType image/webp             "access plus 1 year"
+    ExpiresByType image/svg+xml          "access plus 1 year"
+    ExpiresByType text/css               "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType font/woff2             "access plus 1 year"
+</IfModule>
+
+# Strict security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options        "SAMEORIGIN"
+    Header set Referrer-Policy        "strict-origin-when-cross-origin"
+    Header set Permissions-Policy     "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# Friendly 404
+ErrorDocument 404 /index.html

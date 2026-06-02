@@ -4,8 +4,45 @@
 
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import { existsSync } from 'fs';
+
+/**
+ * Dev-only middleware that makes clean URLs work locally.
+ * - `/search` → serves `/search.html`
+ * - `/` → serves `/index.html`
+ *
+ * In production this is handled by public/.htaccess on Apache (Hostinger).
+ */
+const cleanUrlMiddleware = () => ({
+  name: 'clean-url-dev',
+  configureServer(server) {
+    server.middlewares.use((req, _res, next) => {
+      const url = req.url.split('?')[0];
+      // Skip files with extensions, vite internals, and the root request
+      if (url === '/' || /\.[a-z0-9]+$/i.test(url) || url.startsWith('/@')) {
+        return next();
+      }
+      const candidate = resolve(__dirname, '.' + url + '.html');
+      if (existsSync(candidate)) {
+        req.url = url + '.html';
+      }
+      next();
+    });
+  },
+  // Same trick for `vite preview`
+  configurePreviewServer(server) {
+    server.middlewares.use((req, _res, next) => {
+      const url = req.url.split('?')[0];
+      if (url === '/' || /\.[a-z0-9]+$/i.test(url)) return next();
+      const candidate = resolve(__dirname, 'dist' + url + '.html');
+      if (existsSync(candidate)) req.url = url + '.html';
+      next();
+    });
+  },
+});
 
 export default defineConfig({
+  plugins: [cleanUrlMiddleware()],
   root: '.',
   publicDir: 'public',         // files in public/ are copied verbatim to dist/
   base: './',                  // relative asset URLs (works on any subpath)
