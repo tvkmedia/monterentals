@@ -133,7 +133,7 @@
     <div class="flex items-center gap-10">
       <a href="/" class="flex items-center group" aria-label="MontenegroDrive — Home">
         <img src="https://rentcarinmontenegro.com/montenegrorentcar.png" alt="MontenegroDrive"
-             class="h-10 md:h-12 w-auto transition-transform group-hover:scale-105"
+             class="h-14 md:h-16 w-auto transition-transform group-hover:scale-105"
              loading="eager" decoding="async"/>
       </a>
       <nav class="hidden md:flex gap-6">
@@ -150,7 +150,7 @@
   </div>
 </header>
 
-<main class="pt-[72px]">
+<main class="pt-24">
 
 <!-- Hero Section -->
 <section id="hero"
@@ -399,39 +399,30 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What documents do I need to rent a car?",
-      "acceptedAnswer": { "@type": "Answer", "text": "A valid passport or national ID, your full driver's licence (held for at least one year), and the credit card you used to book. EU citizens are fine with their EU licence; everyone else should bring an International Driving Permit alongside their national licence." }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I drive my rental into Croatia, Bosnia or Albania?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes — we issue a Green Card (mandatory cross-border insurance) free of charge as long as you tell us at pick-up. Some categories (luxury and 4x4) have a small daily cross-border fee. Kosovo is excluded across the entire fleet." }
-    },
-    {
-      "@type": "Question",
-      "name": "Is the price I see the final price?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our prices always include unlimited mileage, basic insurance with collision damage waiver, theft protection, airport surcharge, and VAT. Optional extras (additional driver, child seats, GPS, full insurance) are clearly priced at checkout." }
-    },
-    {
-      "@type": "Question",
-      "name": "How does the fuel policy work?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Full to full — you pick the car up with a full tank and return it full. Save your last fuel receipt; we ask for it on return. If you're short on time we can refuel for you at the local pump rate plus a €15 service fee." }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I cancel or change my booking?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Free cancellation until 48 hours before pick-up — no questions asked, full refund within 5 business days. Inside the 48-hour window we charge one day's rental. You can modify dates and pick-up location any time, subject to availability." }
-    },
-    {
-      "@type": "Question",
-      "name": "What happens if I'm late picking the car up?",
-      "acceptedAnswer": { "@type": "Answer", "text": "We hold your booking for 90 minutes after the scheduled time at no charge. After that please call the local counter — flight delays and ferry hold-ups are common and we'll always try to accommodate you." }
-    }
-  ]
+  "@type": "AutoRental",
+  "name": "MontenegroDrive",
+  "url": "https://montenegrodrive.com",
+  "logo": "https://montenegrodrive.com/logo.svg",
+  "image": "https://montenegrodrive.com/screenshot.png",
+  "description": "Premium car rental across Montenegro. No hidden fees, free cancellation, 24/7 multilingual support.",
+  "telephone": "+382-20-123-456",
+  "email": "support@montenegrodrive.example",
+  "priceRange": "€€",
+  "areaServed": { "@type": "Country", "name": "Montenegro" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bulevar Sv. Petra Cetinjskog 130",
+    "addressLocality": "Podgorica",
+    "postalCode": "81000",
+    "addressCountry": "ME"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "2500",
+    "bestRating": "5"
+  },
+  "sameAs": []
 }
 </script>
 
