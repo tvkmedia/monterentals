@@ -181,9 +181,9 @@ JSONLD_HOME = f"""<script type="application/ld+json">
 #  The PNG already lives on the production server, so we reference it via
 #  the absolute domain URL. That makes it work from local dev AND production
 #  without requiring the file to be inside the build output.
-LOGO_SVG = '''<a href="/" class="flex items-center group" aria-label="MontenegroDrive — Home">
-        <img src="https://rentcarinmontenegro.com/montenegrorentcar.png" alt="MontenegroDrive"
-             class="h-12 md:h-14 w-auto transition-transform group-hover:scale-105"
+LOGO_SVG = '''<a href="/" class="flex items-center flex-shrink-0 group" aria-label="MontenegroDrive — Home">
+        <img src="https://rentcarinmontenegro.com/rentacarinmontenegro.png" alt="MontenegroDrive"
+             class="h-12 md:h-14 w-auto max-w-[180px] md:max-w-[220px] object-contain transition-transform group-hover:scale-105"
              loading="eager" decoding="async"/>
       </a>'''
 
