@@ -92,9 +92,10 @@ tailwind.config = {
 <header class="fixed top-0 w-full z-50 bg-surface shadow-sm">
   <div class="max-w-container-max mx-auto flex justify-between items-center px-gutter py-4">
     <div class="flex items-center gap-10">
-      <a href="/" class="flex items-center group" aria-label="MontenegroDrive — Home">
+      <a href="/" class="flex items-center h-10 md:h-12 overflow-visible group" aria-label="MontenegroDrive — Home">
         <img src="https://rentcarinmontenegro.com/montenegrorentcar.png" alt="MontenegroDrive"
-             class="h-16 md:h-20 w-auto transition-transform group-hover:scale-105"
+             class="h-10 md:h-12 w-auto max-w-none scale-[1.7] md:scale-[1.85] origin-left transition-transform group-hover:scale-[1.78] md:group-hover:scale-[1.95]"
+             style="transform-origin: 0 50%;"
              loading="eager" decoding="async"/>
       </a>
       <nav class="hidden md:flex gap-6">
@@ -110,7 +111,7 @@ tailwind.config = {
     </div>
   </div>
 </header>
-<main class="pt-28">
+<main class="pt-16">
 
 <article>
   <section class="relative h-[520px] flex items-end overflow-hidden">
