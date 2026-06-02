@@ -176,15 +176,14 @@ JSONLD_HOME = f"""<script type="application/ld+json">
 
 
 # --------------------------------------------------------------------
-#  Logo markup (SVG + wordmark, used in <header>)
+#  Logo markup (PNG, used in <header>)
 # --------------------------------------------------------------------
-LOGO_SVG = '''<a href="index.html" class="flex items-center gap-3 group" aria-label="MontenegroDrive — Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" class="w-10 h-10 flex-shrink-0 transition-transform group-hover:scale-105" aria-hidden="true">
-          <rect width="40" height="40" rx="8" fill="#001835"/>
-          <text x="20" y="29" font-family="'Plus Jakarta Sans', system-ui, sans-serif"
-                font-size="26" font-weight="800" text-anchor="middle" fill="#FF5722">M</text>
-        </svg>
-        <span class="font-h2 text-h2 font-bold text-primary leading-none">MontenegroDrive</span>
+#  Source file must exist at public/montenegrorentcar.png so Vite copies
+#  it to dist/montenegrorentcar.png on build — served at the site root.
+LOGO_SVG = '''<a href="index.html" class="flex items-center group" aria-label="MontenegroDrive — Home">
+        <img src="/montenegrorentcar.png" alt="MontenegroDrive"
+             class="h-10 md:h-12 w-auto transition-transform group-hover:scale-105"
+             loading="eager" decoding="async"/>
       </a>'''
 
 
@@ -220,7 +219,9 @@ LOGO_RE_A = re.compile(
     r'<a\s+href="index\.html"\s+class="font-h2\s+text-h2\s+font-bold\s+text-primary"\s*>\s*MontenegroDrive\s*</a>',
 )
 LOGO_RE_B = re.compile(
-    r'<a\s+href="index\.html"\s+class="flex\s+items-center\s+gap-3\s+group"[^>]*aria-label[^>]*>.*?</a>',
+    # Matches the previous SVG variant (class="flex items-center gap-3 group")
+    # AND the current PNG variant (class="flex items-center group").
+    r'<a\s+href="index\.html"\s+class="flex\s+items-center[^"]*group"[^>]*aria-label[^>]*>.*?</a>',
     re.DOTALL,
 )
 
