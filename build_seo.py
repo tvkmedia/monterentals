@@ -183,7 +183,7 @@ JSONLD_HOME = f"""<script type="application/ld+json">
 #  without requiring the file to be inside the build output.
 LOGO_SVG = '''<a href="/" class="flex items-center flex-shrink-0 group" aria-label="MontenegroDrive — Home">
         <img src="https://rentcarinmontenegro.com/rentacarinmontenegro.png" alt="MontenegroDrive"
-             class="h-12 md:h-14 w-auto max-w-[180px] md:max-w-[220px] object-contain transition-transform group-hover:scale-105"
+             class="h-14 md:h-16 w-auto max-w-[220px] md:max-w-[260px] object-contain transition-transform group-hover:scale-105"
              loading="eager" decoding="async"/>
       </a>'''
 
